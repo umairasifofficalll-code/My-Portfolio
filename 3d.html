@@ -3,633 +3,372 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Umair Asif | Data Analyst · Power BI · SQL · Python</title>
-<meta name="description" content="Umair Asif, data analyst in Lahore. 20+ projects in Power BI, SQL and Python: live dashboards, ML and NLP case studies. Open to remote, Lahore and UAE roles.">
+<title>Umair Asif · Data analyst in Lahore</title>
+<meta name="description" content="Umair Asif, data analyst in Lahore. 21 Power BI, SQL and Python projects with live dashboards and code. Open to remote, Lahore and UAE roles.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Umair Asif – Data Analyst">
-<meta property="og:description" content="Power BI, SQL and Python projects with live dashboards. Open to remote, Lahore and UAE roles.">
+<meta property="og:title" content="Umair Asif · Data analyst in Lahore">
+<meta property="og:description" content="Raw rows in, decisions out. Power BI, SQL and Python projects with live dashboards and code.">
 <meta property="og:url" content="https://umairasifofficalll-code.github.io/My-Portfolio/">
 <meta property="og:image" content="https://umairasifofficalll-code.github.io/My-Portfolio/img/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://umairasifofficalll-code.github.io/My-Portfolio/img/og.png">
-<meta name="theme-color" content="#0b0a1a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffb547'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%230b0a1a'%3EUA%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<meta name="theme-color" content="#e2e2e2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%237d0c14'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23e2e2e2'%3EUA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/zilla-slab-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/zilla-slab-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--bg:#0b0a1a;--bg2:#100f24;--panel:#15132e;--panel2:#1b1940;--line:#2a2852;--line2:#3a3870;--tx:#eeedff;--mut:#a09ec8;--dim:#6f6d9c;--amber:#ffb547;--mint:#3ee6b0;--coral:#ff6b6b;--sky:#5ac8fa;--ink:#0b0a1a;
---r:18px;--shadow:0 24px 60px -28px rgba(0,0,0,.75);color-scheme:dark}
-@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f5ff;--bg2:#efedff;--panel:#ffffff;--panel2:#f7f6ff;--line:#e1def7;--line2:#cfcbef;--tx:#151338;--mut:#545280;--dim:#8a88b0;--amber:#e08a00;--mint:#0b9f74;--coral:#e0454b;--sky:#1d8fd1;--ink:#fff;--shadow:0 24px 50px -30px rgba(40,30,120,.35);color-scheme:light}}
+@font-face{font-family:'Zilla Slab';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/zilla-slab-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Zilla Slab';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/zilla-slab-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Zilla Slab';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/zilla-slab-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Zilla Slab';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/zilla-slab-latin-400-italic.woff2) format('woff2')}
+:root{
+  --bg:#e2e2e2;--surface:#d6d6d6;--light:#f0f0f0;--ink:#7d0c14;--muted:#7a4a4e;--accent:#7d0c14;--accent-strong:#5c070d;--accent-ink:#e2e2e2;
+  --field:#7d0c14;--field-ink:#e2e2e2;--field-muted:#d9b3b6;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2.5rem,1.6rem + 2.6vw,3.75rem);
+  --step-giant:clamp(5.5rem,15vw,15rem);
+  --m:12px;--pad:clamp(24px,4.4vw,72px);
+  --ease-out:cubic-bezier(0.22,1,0.36,1);--ease-expo:cubic-bezier(0.16,1,0.3,1);--ease-in-out:cubic-bezier(0.76,0,0.24,1);--ease-soft:cubic-bezier(0.33,1,0.68,1);
+  --t-press:140ms;--t-hover:180ms;--t-ui:240ms;--t-reveal:800ms;
+}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
-body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
- background:radial-gradient(900px 520px at 85% -10%,color-mix(in srgb,var(--sky) 16%,transparent),transparent 70%),radial-gradient(700px 480px at -5% 10%,color-mix(in srgb,var(--amber) 11%,transparent),transparent 70%),radial-gradient(800px 600px at 50% 110%,color-mix(in srgb,var(--mint) 9%,transparent),transparent 70%)}
-body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
- background-image:radial-gradient(color-mix(in srgb,var(--line2) 70%,transparent) 1px,transparent 1.2px);background-size:26px 26px;
- -webkit-mask-image:linear-gradient(#000,transparent 75%);mask-image:linear-gradient(#000,transparent 75%)}
-main,header,footer{position:relative;z-index:1}
-.mono{font-family:'IBM Plex Mono',monospace}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--step-body)/1.5 'Zilla Slab',Georgia,serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:600;letter-spacing:-0.025em;line-height:1.0;margin:0}
+p{margin:0}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
-h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.08;margin:0;letter-spacing:-.025em;font-weight:700}
-/* header */
-header{position:sticky;top:12px;z-index:30;margin:12px auto 0;width:min(1200px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 16px;border-radius:16px;
- background:color-mix(in srgb,var(--panel) 72%,transparent);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border:1px solid var(--line);box-shadow:var(--shadow)}
-.logo{font:600 16px 'Space Grotesk';text-decoration:none;display:flex;gap:10px;align-items:center;white-space:nowrap}
-.logo i{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--amber),#ff8f5a);color:#0b0a1a;display:grid;place-items:center;font:600 12px 'IBM Plex Mono';font-style:normal}
-nav{display:flex;gap:4px;font-size:14px;align-items:center}
-nav a{text-decoration:none;color:var(--mut);padding:7px 12px;border-radius:10px;transition:color .2s,background .2s}
-nav a:hover{color:var(--tx)}nav a.on{color:var(--tx);background:color-mix(in srgb,var(--tx) 8%,transparent)}
-nav .sp{width:8px}
-@media(max-width:900px){nav a:not(.keep){display:none}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 18px;border-radius:12px;border:1px solid transparent;background:var(--amber);color:#0b0a1a;font:600 14px Inter;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s;white-space:nowrap}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px -10px var(--amber)}
-.btn.ghost{background:color-mix(in srgb,var(--panel) 60%,transparent);color:var(--tx);border-color:var(--line2)}.btn.ghost:hover{border-color:var(--mint);box-shadow:none}
-.btn.sm{padding:8px 14px;font-size:13px;border-radius:10px}
-.btn svg{width:17px;height:17px;flex:none}
-nav .btn{color:#0b0a1a}nav .btn.ghost{color:var(--tx)}
-/* layout */
-section{padding:96px clamp(16px,4vw,48px);max-width:1248px;margin:0 auto}
-.eyebrow{display:flex;align-items:center;gap:10px;font:500 12px 'IBM Plex Mono';letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
-.eyebrow b{color:var(--amber);font-weight:500}
-.eyebrow::after{content:"";height:1px;flex:0 1 80px;background:var(--line2)}
-h2{font-size:clamp(30px,4.2vw,48px);margin-bottom:12px}
-.sub{color:var(--mut);max-width:62ch;margin:0 0 32px}
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:30px}.head .sub{margin:0}
-/* hero */
-#hero{min-height:calc(100svh - 80px);display:grid;grid-template-columns:1.02fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding-top:56px;padding-bottom:40px}
-@media(max-width:960px){#hero{grid-template-columns:1fr;min-height:0;padding-top:40px}}
-.otw{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 10px;border-radius:99px;border:1px solid color-mix(in srgb,var(--mint) 40%,var(--line));background:color-mix(in srgb,var(--mint) 9%,transparent);font:500 13px Inter;color:var(--tx);margin-bottom:22px}
-.otw i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 var(--mint);animation:ping 2s infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--mint) 60%,transparent)}80%,100%{box-shadow:0 0 0 9px transparent}}
-.role{font:500 13px 'IBM Plex Mono';letter-spacing:.06em;color:var(--mut);margin:0 0 16px;display:flex;flex-wrap:wrap;gap:6px 14px}
-.role span+span::before{content:"·";margin-right:14px;color:var(--dim)}
-h1{font-size:clamp(44px,7vw,88px);font-weight:700;letter-spacing:-.04em}
-h1 .row{display:block;overflow:hidden;padding-bottom:.06em}
-h1 .row span{display:inline-block;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
-h1 .row:nth-child(2) span{animation-delay:.12s;background:linear-gradient(92deg,var(--amber),#ff8f5a 55%,var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}
-@keyframes up{to{transform:none}}
-.lead{color:var(--mut);font-size:clamp(16px,1.6vw,18.5px);max-width:52ch;margin:22px 0 30px;opacity:0;animation:fade .8s .5s forwards}
-.lead b{color:var(--tx);font-weight:600}
-.acts{display:flex;gap:10px;flex-wrap:wrap;opacity:0;animation:fade .8s .7s forwards}
-.trust{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;color:var(--dim);font:500 12px 'IBM Plex Mono';letter-spacing:.04em;opacity:0;animation:fade .8s .9s forwards}
-.trust b{color:var(--mut);font-weight:500}
-@keyframes fade{to{opacity:1}}
-.live{background:linear-gradient(180deg,color-mix(in srgb,var(--panel) 92%,transparent),color-mix(in srgb,var(--bg2) 92%,transparent));border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:var(--shadow);position:relative}
-.live::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(140deg,color-mix(in srgb,var(--sky) 55%,transparent),transparent 35%,transparent 65%,color-mix(in srgb,var(--amber) 45%,transparent));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.live .bar{display:flex;justify-content:space-between;font-size:12px;color:var(--dim);margin:2px 4px 8px}
-.live .bar b{color:var(--mint);font-weight:500}.live .bar b::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mint);margin-right:6px;animation:blink 1.4s infinite}
-@keyframes blink{50%{opacity:.25}}
-#heroCanvas{width:100%;height:300px;display:none}
-.globe-wrap{position:relative;height:clamp(320px,40vw,460px);border-radius:16px;overflow:hidden;cursor:grab;touch-action:pan-y;
- background:radial-gradient(circle at 50% 46%,color-mix(in srgb,var(--sky) 16%,transparent),transparent 60%)}
-.globe-wrap::before{content:"";position:absolute;inset:0;background:url(img/globe-poster.webp) center/contain no-repeat;transition:opacity .6s;pointer-events:none}
-.globe-wrap.ready::before{opacity:0}
-.globe-wrap:active{cursor:grabbing}
-.globe-wrap canvas{display:block;width:100%!important;height:100%!important;position:relative}
-.globe-wrap.fail{display:none}.globe-wrap.fail+#heroCanvas{display:block}
-.gpop{position:absolute;z-index:3;min-width:210px;max-width:270px;background:color-mix(in srgb,var(--panel) 95%,transparent);border:1px solid var(--line2);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);transform:translate(-50%,calc(-100% - 14px));opacity:0;pointer-events:none;transition:opacity .18s;backdrop-filter:blur(8px)}
+img,video{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+::selection{background:var(--ink);color:var(--bg)}
+.link{text-decoration:underline;text-decoration-thickness:0.07em;text-underline-offset:0.2em;text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);transition:text-decoration-color var(--t-hover) ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;background:var(--accent);color:var(--accent-ink);font:500 var(--step-body)/1 'Zilla Slab',serif;text-decoration:none;border:0;cursor:pointer;transition:transform var(--t-press) var(--ease-out),background-color var(--t-hover) ease}
+.btn:active{transform:scale(0.97)}
+.btn.light{background:var(--field-ink);color:var(--field)}
+@media (hover:hover) and (pointer:fine){.btn:hover{background:var(--accent-strong)}.btn.light:hover{background:#fff}.link:hover{text-decoration-color:currentColor}}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- split stage ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:var(--m);padding:var(--m)}
+.read{min-width:0}
+.stage{position:sticky;top:var(--m);height:calc(100svh - 2 * var(--m));background:var(--surface);overflow:hidden}
+.layer{position:absolute;inset:0 0 56px 0;opacity:0;transition:opacity 1.6s var(--ease-soft)}
+.layer.on{opacity:1}
+.layer img,.layer video{width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(1) contrast(1.05)}
+.layer figcaption{position:absolute;left:24px;bottom:20px;max-width:60%;background:var(--bg);padding:8px 12px;font-size:var(--step-small);line-height:1.35;color:var(--ink)}
+.stagebar{position:absolute;left:0;right:0;bottom:0;height:56px;background:var(--bg);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 20px;font-size:var(--step-small);color:var(--ink)}
+.stagebar b{font-weight:500}
+#globe{cursor:grab;touch-action:pan-y}#globe:active{cursor:grabbing}
+#globe canvas{display:block;width:100%!important;height:100%!important}
+#globe.fail{display:flex;align-items:center;justify-content:center;padding:40px}
+.gpop{position:absolute;z-index:3;min-width:220px;max-width:280px;background:var(--bg);padding:14px 16px;box-shadow:0 18px 40px -20px rgba(60,10,14,.45); /* taste-skill-ignore: floating popover */transform:translate(-50%,calc(-100% - 14px));opacity:0;pointer-events:none;transition:opacity var(--t-ui) var(--ease-out)}
 .gpop.on{opacity:1;pointer-events:auto}
-.gpop b{display:block;font:500 12px 'IBM Plex Mono';color:var(--amber);margin-bottom:6px}
-.gpop button{all:unset;display:block;cursor:pointer;font-size:13.5px;line-height:1.35;padding:6px 0;border-top:1px dashed var(--line);color:var(--tx)}
-.gpop button:first-of-type{border-top:0}.gpop button:hover,.gpop button:focus-visible{color:var(--mint)}
-.gpop small{display:block;color:var(--mut);font:400 11px 'IBM Plex Mono'}
-.places{display:flex;flex-wrap:wrap;gap:6px;margin:12px 2px 2px}
-.places button{background:none;border:1px solid var(--line);color:var(--mut);padding:5px 11px;border-radius:99px;font:500 12px 'IBM Plex Mono';cursor:pointer;transition:all .2s}
-.places button:hover,.places button.on{border-color:var(--mint);color:var(--tx);background:color-mix(in srgb,var(--mint) 8%,transparent)}
-.places button i{font-style:normal;color:var(--mint);margin-left:5px}
-/* stats band */
-.stats{max-width:1248px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--r);background:color-mix(in srgb,var(--panel) 70%,transparent);overflow:hidden}
-@media(max-width:720px){.kpis{grid-template-columns:repeat(2,1fr)}}
-.kpi{padding:22px 24px;border-left:1px solid var(--line);position:relative}.kpi:first-child{border-left:0}
-@media(max-width:720px){.kpi:nth-child(3){border-left:0}.kpi:nth-child(n+3){border-top:1px solid var(--line)}}
-.kpi::before{content:"";position:absolute;left:24px;top:0;width:28px;height:2px;background:var(--c)}
-.kpi b{display:block;font:600 clamp(26px,3vw,36px) 'Space Grotesk';letter-spacing:-.02em}.kpi small{color:var(--mut);font-size:13px;line-height:1.35;display:block}
-/* about */
-.about{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,4vw,56px)}
-@media(max-width:900px){.about{grid-template-columns:1fr}}
-.about .bio p{color:var(--mut);margin:0 0 16px;font-size:17px}.about .bio p b{color:var(--tx);font-weight:600}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.chips span{border:1px solid var(--line2);border-radius:99px;padding:6px 12px;font:500 12.5px 'IBM Plex Mono';color:var(--mut);background:color-mix(in srgb,var(--panel) 60%,transparent)}
-.tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--line2)}
-.tl li{position:relative;padding:0 0 26px 26px}.tl li:last-child{padding-bottom:0}
-.tl li::before{content:"";position:absolute;left:-6px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--c,var(--amber))}
-.tl small{font:500 12px 'IBM Plex Mono';color:var(--dim)}.tl h3{font-size:19px;margin:4px 0 6px}.tl p{margin:0;color:var(--mut);font-size:14.5px}
-/* cards */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.card{background:linear-gradient(180deg,var(--panel),color-mix(in srgb,var(--panel) 70%,var(--bg)));border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s}
-.card:hover{border-color:color-mix(in srgb,var(--c,var(--amber)) 60%,var(--line));transform:translateY(-4px);box-shadow:0 26px 50px -30px color-mix(in srgb,var(--c,var(--amber)) 55%,transparent)}
-.card .cb{padding:18px 20px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
-.card.feat{grid-column:span 2}
-.card.feat .thumb{aspect-ratio:16/8}
-@media(max-width:700px){.card.feat{grid-column:auto}.card.feat .thumb{aspect-ratio:16/10}}
-.tag{font:500 11.5px 'IBM Plex Mono';color:var(--c,var(--amber));letter-spacing:.03em}
-.card h3{font-size:20px;letter-spacing:-.02em}.card p{margin:0;color:var(--mut);font-size:14.5px;line-height:1.6}
-.met{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
-.met span{font:500 12px 'IBM Plex Mono';color:var(--tx);background:color-mix(in srgb,var(--c,var(--amber)) 12%,transparent);border:1px solid color-mix(in srgb,var(--c,var(--amber)) 25%,transparent);padding:4px 10px;border-radius:8px}
-.foot{display:flex;gap:16px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
-.card button.link,.ext{all:unset;cursor:pointer;color:var(--c,var(--amber));font:500 13px 'IBM Plex Mono'}
-.ext{color:var(--mut)}.ext:hover{color:var(--tx)}.card button.link:hover{text-decoration:underline;text-underline-offset:3px}
-.card .foot .link{margin-right:auto}
-.thumb{aspect-ratio:16/10;background:var(--bg2);border-bottom:1px solid var(--line);overflow:hidden;cursor:pointer;position:relative}
-.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
-.card:hover .thumb img{transform:scale(1.04)}
-.thumb.cert img{object-position:center 30%}
-.thumb.bars{display:flex;align-items:flex-end;gap:6px;padding:18px 18px 0;background:linear-gradient(180deg,var(--bg2),color-mix(in srgb,var(--c) 10%,var(--bg2)))}
-.thumb.bars i{flex:1;background:linear-gradient(180deg,var(--c),color-mix(in srgb,var(--c) 45%,transparent));border-radius:5px 5px 0 0;height:var(--h);transform-origin:bottom;animation:grow 1s cubic-bezier(.2,.8,.2,1) backwards;opacity:.9}
-@keyframes grow{from{transform:scaleY(0)}}
-.filters{display:flex;gap:6px;flex-wrap:wrap}
-.filters button{background:color-mix(in srgb,var(--panel) 60%,transparent);border:1px solid var(--line);color:var(--mut);padding:7px 14px;border-radius:99px;font:500 13px Inter;cursor:pointer;transition:all .2s}
-.filters button.on,.filters button:hover{background:var(--tx);color:var(--bg);border-color:var(--tx)}
-.owner{display:none!important}.own .owner{display:inline-flex!important}
-.empty{color:var(--mut);border:1px dashed var(--line);border-radius:14px;padding:28px;text-align:center;grid-column:1/-1}
-.docs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}.docs button{background:none;border:1px solid var(--line2);color:var(--tx);padding:8px 14px;border-radius:99px;font:500 13px 'IBM Plex Mono';cursor:pointer}.docs button:hover{border-color:var(--amber);color:var(--amber)}
-.dlinks{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.pages img{display:block;width:100%;border:1px solid var(--line);border-radius:8px;margin:0 0 10px}.pages{max-height:70vh;overflow-y:auto;padding-right:4px}
-pre.code{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;max-height:65vh;overflow:auto;font:400 12px/1.5 'IBM Plex Mono',monospace;white-space:pre}
-.back{all:unset;cursor:pointer;color:var(--amber);font:500 13px 'IBM Plex Mono';display:inline-block;margin-bottom:8px}
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.skills .card{padding:22px}
-.sk{margin-top:14px}.sk .l{display:flex;justify-content:space-between;font:400 13px 'IBM Plex Mono';margin-bottom:6px;color:var(--mut)}
-.sk .t{height:6px;background:var(--line);border-radius:9px;overflow:hidden}.sk .t i{display:block;height:100%;width:0;background:linear-gradient(90deg,color-mix(in srgb,var(--c) 50%,transparent),var(--c));border-radius:9px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
-/* lab */
-.lab{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.lab .tabs{margin-bottom:16px}.chartbox{height:340px;position:relative}
+.gpop b{display:block;font-weight:600;font-size:var(--step-small);margin-bottom:4px;color:var(--muted)}
+.gpop button{all:unset;display:block;cursor:pointer;font-size:var(--step-small);line-height:1.35;padding:5px 0;color:var(--ink)}
+.gpop button:hover,.gpop button:focus-visible{text-decoration:underline}
+.preview{position:absolute;right:24px;bottom:80px;width:min(46%,340px);aspect-ratio:4/3;background:var(--bg);z-index:2;clip-path:inset(100% 0 0 0);transition:clip-path 320ms var(--ease-out);pointer-events:none}
+.preview.on{clip-path:inset(0)}
+.preview img{width:100%;height:100%;object-fit:cover;object-position:top}
+
+/* ---------- hero sheet ---------- */
+.hero{min-height:calc(100svh - 2 * var(--m));display:flex;flex-direction:column;padding:28px var(--pad) 0;text-align:center}
+.top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+.top a{text-decoration:none}
+.top .l{justify-self:start;display:flex;gap:20px}.top .r{justify-self:end;display:flex;gap:20px}
+.word{font-weight:600;font-size:var(--step-lead);letter-spacing:-0.02em;white-space:nowrap}
+.hero .body{margin-top:24svh;display:flex;flex-direction:column;align-items:center}
+.hero h1{font-size:var(--step-head);max-width:12ch}
+.hero .lead{margin-top:36px;max-width:40ch;color:var(--ink)}
+.hero .acts{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:center}
+.hero .facts{margin-top:auto;padding:28px 0 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
+.hero .facts b{display:block;font-size:var(--step-lead);font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-0.02em}
+.hero .facts span{font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- reading column ---------- */
+.col{padding:0 var(--pad);max-width:calc(46ch + 2 * var(--pad))}
+.sec{padding-top:clamp(120px,14vw,200px)}
+.sec h2{font-size:var(--step-lead);font-weight:600;letter-spacing:-0.02em}
+.sec .intro{margin-top:16px;max-width:42ch}
+
+/* work ledger */
+.ledger{list-style:none;margin:40px 0 0;padding:0}
+.ledger .group{margin-top:44px;font-weight:500;color:var(--muted);font-size:var(--step-body)}
+.ledger .group:first-child{margin-top:0}
+.row{all:unset;box-sizing:border-box;display:grid;grid-template-columns:1fr auto;grid-template-areas:'th th' 'n p' 'k k';column-gap:16px;width:100%;padding:12px 0;cursor:pointer;transition:opacity var(--t-hover) ease}
+.row .n{grid-area:n;font-weight:500}
+.row .k{grid-area:k;font-size:var(--step-small);color:var(--muted);line-height:1.35;margin-top:2px}
+.row .p{grid-area:p;text-align:right;font-size:var(--step-small);color:var(--muted);align-self:baseline;white-space:nowrap}
+.row .th{display:none}
+@media (hover:hover) and (pointer:fine){
+  .ledger:has(.row:hover,.row:focus-visible) .row:not(:hover,:focus-visible){opacity:.4}
+}
+.row:focus-visible{outline-offset:4px}
+
+/* tools: giant word + filled bars */
+.tools{container-type:inline-size}
+.tools h2.giant{font-size:min(var(--step-giant),30cqw);line-height:.8;letter-spacing:-0.045em;text-transform:uppercase;margin-left:-0.04em}
+.tools .intro{margin-top:28px}
+.bars{margin-top:28px;display:flex;flex-direction:column;gap:6px}
+.bars details{background:var(--surface)}
+.bars summary{list-style:none;display:flex;justify-content:space-between;align-items:center;min-height:58px;padding:0 20px;cursor:pointer;font-weight:500;transition:background-color var(--t-hover) ease}
+.bars summary::-webkit-details-marker{display:none}
+.bars summary::after{content:"+";font-size:var(--step-lead);line-height:1;transition:transform var(--t-ui) var(--ease-out)}
+.bars details[open] summary::after{transform:rotate(45deg)}
+@media (hover:hover) and (pointer:fine){.bars summary:hover{background:#cbcbcb}}
+.bars ul{list-style:none;margin:0;padding:4px 20px 22px;display:flex;flex-direction:column;gap:14px}
+.bars li{display:flex;flex-direction:column;gap:2px}
+.bars li span{font-size:var(--step-small);color:var(--muted)}
+
+/* about letter */
+.letter .mono-mark{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:600;font-size:var(--step-small);margin-top:28px}
+.letter .ps{margin-top:28px;display:flex;flex-direction:column;gap:1.5em;max-width:44ch}
+.letter mark{background:var(--surface);color:inherit;padding:0 .15em}
+.letter .sign{margin-top:36px;font-style:italic;font-size:var(--step-lead)}
+.letter .role{font-size:var(--step-small);color:var(--muted);margin-top:4px}
+.timeline{list-style:none;margin:56px 0 0;padding:0;display:flex;flex-direction:column;gap:28px}
+.timeline b{display:block;font-weight:600}
+.timeline span{display:block;font-size:var(--step-small);color:var(--muted);margin-top:2px}
+.timeline p{margin-top:8px}
+
+/* proof on the red field */
+.proof{margin:var(--m);margin-top:clamp(120px,14vw,200px);background:var(--field);color:var(--field-ink);padding:clamp(72px,9vw,140px) var(--pad);display:grid;grid-template-columns:3fr 9fr;gap:32px}
+.proof h2{font-size:var(--step-head)}
+.proof .lede{margin-top:20px;max-width:24ch;color:var(--field-ink)}
+.names{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;font-size:var(--step-body);line-height:1.5;align-items:start}
+.names p{margin-bottom:8px}
+.names .kind{color:var(--field-muted)}
+.names a{text-decoration-color:color-mix(in srgb,var(--field-ink) 40%,transparent)}
+.names small{display:block;font-size:var(--step-small);color:var(--field-muted)}
+.certs{grid-column:1/-1;margin-top:48px;display:grid;grid-template-columns:repeat(5,1fr);gap:var(--m)}
+.certs button{all:unset;cursor:pointer;display:block;background:var(--field-ink);aspect-ratio:4/3;overflow:hidden}
+.certs img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:grayscale(1);transition:filter var(--t-ui) ease,transform 600ms var(--ease-soft)}
+@media (hover:hover) and (pointer:fine){.certs button:hover img{filter:none;transform:scale(1.03)}}
+
 /* contact */
-.cta{position:relative;border-radius:28px;padding:clamp(32px,6vw,72px);text-align:center;overflow:hidden;border:1px solid var(--line);
- background:radial-gradient(600px 300px at 20% 0,color-mix(in srgb,var(--amber) 18%,transparent),transparent 70%),radial-gradient(600px 320px at 90% 100%,color-mix(in srgb,var(--sky) 18%,transparent),transparent 70%),var(--panel)}
-.cta h2{font-size:clamp(32px,5vw,56px)}.cta .sub{margin:0 auto 28px}
-.cta .acts{justify-content:center;opacity:1;animation:none}
-.cta .mail{margin-top:22px;font:500 13px 'IBM Plex Mono';color:var(--dim)}
-.cta .mail button{all:unset;cursor:pointer;color:var(--mut);border-bottom:1px dashed var(--line2)}.cta .mail button:hover{color:var(--tx)}
-/* modal */
-.modal{position:fixed;inset:0;z-index:50;background:rgba(6,5,20,.78);backdrop-filter:blur(8px);display:none;align-items:flex-start;justify-content:center;padding:clamp(12px,4vw,40px);overflow-y:auto}
-.modal.open{display:flex}
-.sheet{background:var(--panel);border:1px solid var(--line2);border-radius:20px;width:min(680px,100%);padding:26px;position:relative;animation:pop .28s cubic-bezier(.2,.8,.2,1);box-shadow:var(--shadow)}
-@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}}
-.x{position:absolute;top:14px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--mut);width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:18px;z-index:2}
-.sheet h3{font-size:26px;margin:8px 34px 12px 0}.sheet ul{padding-left:18px;color:var(--mut);font-size:14.5px}.sheet li{margin-bottom:6px}.sheet>div>img{width:100%;border-radius:12px;margin-bottom:14px;border:1px solid var(--line)}
-.sheet .met{margin-top:10px}
-label{display:block;font:500 12px 'IBM Plex Mono';color:var(--mut);margin:12px 0 4px}
-input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:8px;color:var(--tx);padding:10px 12px;font:400 14px Inter}
-input:focus,select:focus,textarea:focus{border-color:var(--amber);outline:none}
-.err{color:var(--coral);font:400 12px 'IBM Plex Mono';min-height:18px;margin-top:6px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:520px){.two{grid-template-columns:1fr}}
-footer{max-width:1248px;margin:0 auto;border-top:1px solid var(--line);padding:28px clamp(16px,4vw,48px) 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--dim);font:400 13px 'IBM Plex Mono'}
-footer nav a{padding:4px 8px}
-.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--mint);color:#0b0a1a;padding:10px 18px;border-radius:10px;font:500 13px 'IBM Plex Mono';opacity:0;transition:.3s;z-index:60}.toast.show{opacity:1;transform:translate(-50%,0)}
-/* reveal */
-.rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
-.rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}h1 .row span{transform:none}.lead,.acts,.trust{opacity:1}.rv{opacity:1;transform:none}}
-@media(max-width:520px){section{padding-top:72px;padding-bottom:72px}.btn{padding:11px 15px}header{top:8px;margin-top:8px}}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:var(--m);padding:clamp(120px,12vw,180px) var(--m) clamp(120px,12vw,180px)}
+.contact .ask{padding:0 var(--pad)}
+.contact h2{font-size:var(--step-head)}
+.contact .prompt{margin-top:24px;font-size:var(--step-lead);font-weight:500;line-height:1.3;max-width:26ch}
+.contact .prompt span{display:block;color:var(--muted)}
+.field{margin-top:28px;position:relative;max-width:560px}
+.field input{width:100%;height:64px;border:0;background:var(--light);color:var(--ink);font:400 var(--step-body) 'Zilla Slab',serif;padding:0 72px 0 20px;outline:none;transition:box-shadow var(--t-hover) ease} /* taste-skill-ignore: focus ring */
+.field input::placeholder{color:var(--muted)}
+.field input:focus{box-shadow:inset 0 0 0 2px var(--accent)} /* taste-skill-ignore: focus ring */
+.field button{position:absolute;right:10px;top:10px;width:44px;height:44px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer;display:grid;place-items:center;transition:transform var(--t-press) var(--ease-out),background-color var(--t-hover) ease}
+.field button:active{transform:scale(0.94)}
+@media (hover:hover) and (pointer:fine){.field button:hover{background:var(--accent-strong)}}
+.contact .note{margin-top:14px;font-size:var(--step-small);color:var(--muted)}
+.ways{padding:0 var(--pad);display:grid;grid-template-columns:auto 1fr;gap:18px 32px;align-content:end}
+.ways dt{color:var(--muted)}
+.ways dd{margin:0}
+
+/* footer on the last picture */
+footer{position:relative;margin:0 var(--m) var(--m);height:calc(100svh - 2 * var(--m));min-height:560px;overflow:hidden;color:var(--field-ink);background:var(--field);isolation:isolate}
+footer>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:grayscale(1) contrast(1.1);mix-blend-mode:multiply;opacity:.55;z-index:-1}
+footer .ftop{position:relative;display:flex;justify-content:space-between;gap:24px;padding:32px var(--pad)}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 24px}
+footer nav a,footer address a{text-decoration:none}
+footer address{font-style:normal;text-align:right;display:flex;flex-direction:column;gap:4px}
+footer .fname{position:absolute;left:var(--pad);right:var(--pad);bottom:56px}
+footer .fname p:first-child{font-weight:600;font-size:var(--step-giant);line-height:.82;letter-spacing:-0.05em;white-space:nowrap}
+footer .legal{margin-top:24px;font-size:var(--step-small);color:var(--field-muted)}
+
+/* dialog */
+dialog{border:0;padding:0;background:var(--bg);color:var(--ink);width:min(860px,calc(100% - 24px));max-height:calc(100svh - 48px);box-shadow:0 30px 80px -30px rgba(40,0,4,.6)} /* taste-skill-ignore: dialog floats */
+dialog::backdrop{background:rgba(40,4,8,.7)}
+dialog .in{padding:clamp(20px,4vw,40px);overflow:auto;max-height:calc(100svh - 48px)}
+dialog .x{position:sticky;top:0;float:right;width:44px;height:44px;border:0;background:var(--ink);color:var(--bg);font-size:24px;cursor:pointer;margin:-8px -8px 0 16px}
+dialog h3{font-size:var(--step-lead);margin:12px 0}
+dialog .tag{font-size:var(--step-small);color:var(--muted)}
+dialog figure{margin:0 0 20px}
+dialog figure img{width:100%;height:auto}
+dialog ul{padding-left:20px;display:flex;flex-direction:column;gap:8px;margin:16px 0}
+dialog .met{display:flex;flex-wrap:wrap;gap:8px 24px;font-weight:600;font-variant-numeric:tabular-nums}
+dialog .dl{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+dialog .dl .btn.alt{background:var(--surface);color:var(--ink)}
+dialog .docs{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:20px}
+dialog .docs button{all:unset;cursor:pointer;text-decoration:underline;text-underline-offset:.2em}
+dialog .pages img{width:100%;height:auto;margin-bottom:12px}
+dialog pre{background:var(--light);padding:16px;overflow:auto;font:400 13px/1.5 ui-monospace,Menlo,monospace;max-height:60vh;white-space:pre}
+dialog .back{all:unset;cursor:pointer;text-decoration:underline;margin-bottom:12px;display:inline-block}
+dialog form label{display:block;margin:14px 0 6px;font-size:var(--step-small);color:var(--muted)}
+dialog form input,dialog form select,dialog form textarea{width:100%;padding:12px;border:0;background:var(--light);color:var(--ink);font:400 var(--step-body) 'Zilla Slab',serif}
+.err{color:var(--ink);font-size:var(--step-small);min-height:1.4em;margin-top:6px}
+.owner{display:none}.own .owner{display:inline-flex}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:12px 18px;opacity:0;transition:opacity var(--t-ui),transform var(--t-ui) var(--ease-out);z-index:60;pointer-events:none;font-size:var(--step-small)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- entrances ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .js [data-rv]{opacity:0;transform:translateY(24px);transition:opacity 700ms var(--ease-out),transform 900ms var(--ease-expo);transition-delay:calc(var(--i,0) * 80ms)}
+  .js [data-rv].in{opacity:1;transform:none}
+  .js .hero h1,.js .hero .lead,.js .hero .acts,.js .hero .facts{opacity:0;transform:translateY(20px);animation:rise 640ms var(--ease-expo) forwards}
+  .js .hero .lead{animation-delay:90ms}.js .hero .acts{animation-delay:170ms}.js .hero .facts{animation-delay:250ms}
+  @keyframes rise{to{opacity:1;transform:none}}
+  footer>img{transform:scale(1.08);transition:transform 2.4s var(--ease-soft)}
+  footer.in>img{transform:none}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.layer:not(.on){display:none}}
+
+/* ---------- tablet & phone ---------- */
+@media (max-width:1100px){
+  .proof{grid-template-columns:1fr}
+  .names{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .certs{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:860px){
+  .split{display:flex;flex-direction:column;padding:var(--m)}
+  .stage{order:-1;position:sticky;top:var(--m);height:56svh;z-index:0;flex:none}
+  .read{position:relative;z-index:1}
+  .hero{min-height:auto;background:var(--bg);margin-top:calc(-1 * 16svh);padding:28px 20px 0}
+  .hero .body{margin-top:48px}
+  .col{background:var(--bg);padding:0 20px;max-width:none}
+  .read>.col:last-child{padding-bottom:40px}
+  .top{grid-template-columns:1fr auto}
+  .top .l{display:none}
+  .top .word{justify-self:start}
+  .row .th{display:block;grid-area:th;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;margin-bottom:10px;filter:grayscale(1)}
+  .preview{display:none}
+  .contact{grid-template-columns:1fr;gap:56px;padding-top:120px;padding-bottom:96px}
+  .contact .ask,.ways{padding:0 20px}
+  .proof{padding:72px 20px}
+  footer{height:88svh}
+  footer .ftop{flex-direction:column;padding:24px 20px}
+  footer address{text-align:left}
+  footer .fname{left:20px;right:20px}
+  footer .fname p:first-child{font-size:21vw;white-space:normal}
+}
+@media (max-width:520px){
+  .names{grid-template-columns:1fr}
+  .certs{grid-template-columns:repeat(2,1fr)}
+  .hero .facts{grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .ways{grid-template-columns:1fr;gap:4px}
+  .ways dd{margin-bottom:16px}
+  .layer figcaption{max-width:80%}
+}
 </style>
 </head>
 <body>
-<header>
-  <a class="logo" href="#hero"><i>UA</i><span>Umair Asif</span></a>
-  <nav aria-label="Main">
-    <a href="#about">About</a><a href="#dashboards">Dashboards</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certs">Certificates</a>
-    <span class="sp"></span>
-    <a class="btn ghost sm keep" href="Umair_Asif_CV.pdf" download>CV</a>
-    <a class="btn sm keep" href="#contact">Hire me</a>
-  </nav>
-</header>
+<div class="split">
+  <div class="read">
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="top">
+        <nav class="l" aria-label="Sections"><a class="link" href="#work">Work</a><a class="link" href="#tools">Tools</a></nav>
+        <a class="word" href="#top">Umair Asif</a>
+        <nav class="r" aria-label="More"><a class="link" href="#about">About</a><a class="link" href="#contact">Contact</a></nav>
+      </div>
+      <div class="body">
+        <h1>Raw rows in. Decisions out.</h1>
+        <p class="lead">I'm Umair Asif, a data analyst in Lahore. I turn sales, customer and market data into Power&nbsp;BI dashboards and a clear next step, for remote teams and roles in the UAE.</p>
+        <div class="acts">
+          <a class="btn" href="Umair_Asif_CV.pdf" download>Download my CV</a>
+          <a class="link" href="#work">See the 21 projects</a>
+        </div>
+      </div>
+      <div class="facts">
+        <div><b>2 years</b><span>analysing real business data</span></div>
+        <div><b>21</b><span>public projects with code</span></div>
+        <div><b>10</b><span>certificates, Google to BCG</span></div>
+      </div>
+    </section>
 
-<main>
-<section id="hero">
-  <div>
-    <div class="otw"><i></i>Open to work · Remote · Lahore · UAE</div>
-    <p class="role"><span>Data Analyst</span><span>Power BI</span><span>SQL</span><span>Python</span></p>
-    <h1><span class="row"><span>Raw rows in.</span></span><span class="row"><span>Decisions out.</span></span></h1>
-    <p class="lead">I'm <b>Umair Asif</b>, a data analyst in Lahore. I clean messy data, find what drives results and build <b>Power BI dashboards</b> and <b>Python/SQL pipelines</b> that managers act on.</p>
-    <div class="acts">
-      <a class="btn" href="#dashboards">See my work</a>
-      <a class="btn ghost" href="Umair_Asif_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>Download CV</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/umair-asif-data" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21H9z"/></svg></a>
-      <a class="btn ghost" href="https://github.com/umairasifofficalll-code" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+    <div class="col">
+      <section class="sec" id="work">
+        <h2 data-rv>Selected work</h2>
+        <p class="intro" data-rv style="--i:1">Every project is public. Point at one to turn the globe to its market; open it for the findings, the live dashboard and the code.</p>
+        <ul class="ledger" id="ledger"></ul>
+      </section>
+
+      <section class="sec tools" id="tools">
+        <h2 class="giant" data-rv>Tools</h2>
+        <p class="intro" data-rv style="--i:1">What I use, and the project where you can see it working.</p>
+        <div class="bars" id="bars"></div>
+      </section>
+
+      <section class="sec letter" id="about">
+        <h2 data-rv>About me</h2>
+        <div class="mono-mark" aria-hidden="true">UA</div>
+        <div class="ps">
+          <p data-rv>Hello. For two years I've worked with the data behind real decisions: the sales, tours and customer reviews of Past Enlighten, a private tour company in Lahore, and the reports of freelance clients who needed answers faster.</p>
+          <p data-rv style="--i:1">The work I like best starts with a messy file. I clean it in Python, ask it questions in SQL and put the answer in a Power&nbsp;BI page that a manager can read in a minute. For one retail shop that meant finding <mark>the three reasons its sales were falling</mark>; for another client, reports that now take 30% less time.</p>
+          <p data-rv style="--i:2">Everything on this page is public on GitHub. Where a project uses synthetic practice data, as the Dubai and Gulf ones do, its case study says so.</p>
+          <p data-rv style="--i:3">I'm studying for my ICS at Army Public School, I speak English and Urdu, and I'm free from 1 pm to 9 pm Lahore time for calls. If you have data that needs a decision, I'd like to hear about it.</p>
+        </div>
+        <p class="sign" data-rv>Umair Asif</p>
+        <p class="role">Data analyst, Lahore</p>
+        <ul class="timeline">
+          <li data-rv><b>Data Analyst, Past Enlighten</b><span>Oct 2024 to now · remote</span><p>Which tours, seasons and customer groups drive revenue, and which complaints keep coming back.</p></li>
+          <li data-rv style="--i:1"><b>Freelance data analyst</b><span>Jan 2025 to now · remote</span><p>Power BI and Excel reports, automated data entry, a falling-sales diagnosis and an attendance dashboard.</p></li>
+          <li data-rv style="--i:2"><b>ICS, Army Public School (APSACS)</b><span>2024 to now</span><p>Computer Science, Mathematics and Statistics.</p></li>
+        </ul>
+      </section>
     </div>
-    <div class="trust"><span>Certified by</span><b>Google</b><b>Deloitte</b><b>BCG</b><b>TATA</b><b>HP</b></div>
   </div>
-  <div class="live" aria-label="Interactive globe of project locations">
-    <div class="bar mono"><span>projects_by_market.geo</span><b>drag to spin</b></div>
-    <div class="globe-wrap" id="globe"><div class="gpop" id="gpop" role="dialog" aria-live="polite"></div></div>
-    <canvas id="heroCanvas"></canvas>
-    <div class="places" id="places" aria-label="Jump to a market"></div>
-  </div>
-</section>
 
-<div class="stats rv">
-  <div class="kpis">
-    <div class="kpi" style="--c:var(--amber)"><b data-n="20" data-s="+">0</b><small>projects shipped</small></div>
-    <div class="kpi" style="--c:var(--mint)"><b data-n="3.47" data-d="2" data-s="bn">0</b><small>fintech volume analysed</small></div>
-    <div class="kpi" style="--c:var(--sky)"><b data-n="367.1" data-d="1" data-s=" Cr">0</b><small>retail sales modelled</small></div>
-    <div class="kpi" style="--c:var(--coral)"><b data-n="51.2" data-d="1" data-s="K">0</b><small>delivery orders cleaned</small></div>
-  </div>
+  <aside class="stage" aria-label="Where the projects are">
+    <div class="layer on" data-for="top work" id="globe"><div class="gpop" id="gpop" role="dialog" aria-live="polite"></div></div>
+    <figure class="layer" data-for="tools" style="margin:0">
+      <video id="clip" muted loop playsinline preload="none" poster="img/dubai-dashboard-poster.jpg" width="960" height="600" aria-label="The Dubai Real Estate dashboard being clicked through its four pages"><source src="img/dubai-dashboard.mp4" type="video/mp4"><source src="img/dubai-dashboard.webm" type="video/webm"></video>
+      <figcaption>The Dubai Real Estate Market Analyzer, clicked through its four pages.</figcaption>
+    </figure>
+    <figure class="layer" data-for="about" style="margin:0">
+      <img src="img/gulf-1.webp" alt="Overview page of the Gulf Market Tracker dashboard" width="1440" height="1064" loading="lazy">
+      <figcaption>Gulf Market Tracker: 12 stocks, risk and return.</figcaption>
+    </figure>
+    <div class="preview" id="preview" aria-hidden="true"><img alt=""></div>
+    <div class="stagebar"><span><b>Open to work:</b> remote, Lahore, UAE</span><span id="clock">Lahore · UTC+5</span></div>
+  </aside>
 </div>
 
-<section id="about">
-  <div class="eyebrow"><b>01</b> About</div>
-  <div class="about">
-    <div class="bio rv">
-      <h2>Numbers into next steps.</h2>
-      <p>I've spent <b>2 years</b> turning sales, customer and operations data into decisions. I use <b>SQL, Python (pandas) and Power BI</b> to clean data, find what drives results and build dashboards people actually use.</p>
-      <p>Every project here is public on GitHub, and many have a live dashboard you can open. Where a project uses synthetic practice data, its case study says so.</p>
-      <div class="chips"><span>SQL (MySQL)</span><span>Python · pandas</span><span>Power BI · DAX</span><span>Advanced Excel</span><span>Statistics</span><span>scikit-learn</span><span>Data storytelling</span><span>English · Urdu</span></div>
-    </div>
-    <ul class="tl rv">
-      <li style="--c:var(--amber)"><small>Oct 2024 – Present · Remote</small><h3>Data Analyst, Past Enlighten</h3><p>Own the tour company's sales, tour-performance and review data; show which tours, seasons and customer groups drive revenue and surface recurring complaints for management.</p></li>
-      <li style="--c:var(--mint)"><small>Jan 2025 – Present · Remote</small><h3>Freelance Data Analyst</h3><p>Built Power BI and Excel reports that cut report time by 30%, and diagnosed a retail shop's falling sales to 3 root causes that led to inventory changes.</p></li>
-      <li style="--c:var(--sky)"><small>2024 – Present</small><h3>ICS, Army Public School (APSACS)</h3><p>Computer Science, Mathematics and Statistics.</p></li>
-    </ul>
+<section class="proof" id="certs">
+  <div>
+    <h2 data-rv>Certified by</h2>
+    <p class="lede" data-rv style="--i:1">Ten courses and job simulations in 2026, each one checkable.</p>
   </div>
+  <div class="names" id="names"></div>
+  <div class="certs" id="certimgs"></div>
 </section>
 
-<section id="dashboards">
-  <div class="eyebrow"><b>02</b> Dashboards</div>
-  <div class="head"><div><h2>Dashboards & reports</h2><p class="sub">Executive views built in Power BI and Python. Open one for the findings, the live dashboard and the code.</p></div>
-  <button class="btn ghost owner" data-add="dashboard">🔒 Add dashboard</button></div>
-  <div class="grid" id="g-dashboard"></div>
-</section>
-
-<section id="projects">
-  <div class="eyebrow"><b>03</b> Projects</div>
-  <div class="head"><div><h2>Case studies</h2><p class="sub">EDA, machine learning, NLP and forensic SQL, each with the question, the method and what I found.</p></div>
-  <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><div class="filters" id="filters"></div><button class="btn owner" data-add="project">🔒 Upload new project</button></div></div>
-  <div class="grid" id="g-project"></div>
-</section>
-
-<section id="skills">
-  <div class="eyebrow"><b>04</b> Skills</div>
-  <h2>Toolkit</h2><p class="sub">Self-rated across the analytics stack.</p>
-  <div class="skills" id="skillGrid"></div>
-</section>
-
-<section id="certs">
-  <div class="eyebrow"><b>05</b> Certificates</div>
-  <div class="head"><div><h2>Certificates</h2><p class="sub">Google credentials verified through Coursera, job simulations from Deloitte, TATA and BCG on Forage, and HP LIFE courses.</p></div>
-  <button class="btn ghost owner" data-add="cert">🔒 Add certificate</button></div>
-  <div class="grid" id="g-cert"></div>
-</section>
-
-<section id="lab">
-  <div class="eyebrow"><b>06</b> Live lab</div>
-  <h2>Play with the data</h2><p class="sub">Switch datasets and the chart redraws.</p>
-  <div class="lab"><div class="filters tabs" id="labTabs"></div><div class="chartbox"><canvas id="labChart"></canvas></div></div>
-</section>
-
-<section id="contact">
-  <div class="cta rv">
-    <div class="eyebrow" style="justify-content:center"><b>07</b> Contact</div>
-    <h2>Have data that needs a decision?</h2>
-    <p class="sub">I'm open to data analyst, BI and reporting roles: remote, in Lahore or in the UAE. I usually reply within a day.</p>
-    <div class="acts">
-      <a class="btn" href="mailto:umairasifofficalll@gmail.com">Email me</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/umair-asif-data" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn ghost" href="https://wa.me/923451504214" target="_blank" rel="noopener">WhatsApp ↗</a>
-      <a class="btn ghost" href="https://github.com/umairasifofficalll-code" target="_blank" rel="noopener">GitHub ↗</a>
-      <a class="btn ghost" href="Umair_Asif_CV.pdf" download>Download CV</a>
-    </div>
-    <p class="mail">umairasifofficalll@gmail.com · <button data-copy="umairasifofficalll@gmail.com">copy</button></p>
+<section class="contact" id="contact">
+  <div class="ask">
+    <h2 data-rv>Contact</h2>
+    <p class="prompt" data-rv style="--i:1"><span>Hiring for a data role?</span>Tell me what it is and I'll reply within a day.</p>
+    <form class="field" id="ask" data-rv style="--i:2">
+      <label class="vh" for="role">The role or project</label>
+      <input id="role" name="role" autocomplete="off" placeholder="e.g. Junior BI analyst, remote" maxlength="120">
+      <button type="submit" aria-label="Write the email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+    </form>
+    <p class="note">This opens your email app with the message started.</p>
   </div>
+  <dl class="ways" data-rv style="--i:1">
+    <dt>Email</dt><dd><a class="link" href="mailto:umairasifofficalll@gmail.com">umairasifofficalll@gmail.com</a></dd>
+    <dt>WhatsApp</dt><dd><a class="link" href="https://wa.me/923451504214" target="_blank" rel="noopener">+92 345 1504214</a></dd>
+    <dt>LinkedIn</dt><dd><a class="link" href="https://www.linkedin.com/in/umair-asif-data" target="_blank" rel="noopener">umair-asif-data</a></dd>
+    <dt>GitHub</dt><dd><a class="link" href="https://github.com/umairasifofficalll-code" target="_blank" rel="noopener">umairasifofficalll-code</a></dd>
+    <dt>CV</dt><dd><a class="link" href="Umair_Asif_CV.pdf" download>One page, PDF</a></dd>
+  </dl>
 </section>
-</main>
-<footer><span>© 2026 Umair Asif · Lahore, Pakistan</span>
-  <nav aria-label="Footer"><a class="keep" href="https://www.linkedin.com/in/umair-asif-data" target="_blank" rel="noopener">LinkedIn</a><a class="keep" href="https://github.com/umairasifofficalll-code" target="_blank" rel="noopener">GitHub</a><a class="keep" href="Umair_Asif_CV.pdf" download>CV</a></nav>
+
+<footer id="foot">
+  <img src="img/dubai-1.webp" alt="Market Overview page of the Dubai Real Estate dashboard" width="1440" height="1250" loading="lazy">
+  <div class="ftop">
+    <nav aria-label="Footer"><a class="link" href="#work">Work</a><a class="link" href="#tools">Tools</a><a class="link" href="#about">About</a><a class="link" href="#contact">Contact</a><a class="link" href="https://github.com/umairasifofficalll-code" target="_blank" rel="noopener">GitHub</a></nav>
+    <address><a class="link" href="mailto:umairasifofficalll@gmail.com">umairasifofficalll@gmail.com</a><span>Lahore, Pakistan</span></address>
+  </div>
+  <div class="fname">
+    <p>Umair Asif</p>
+    <p class="legal">© 2026 Umair Asif. The Dubai, Gulf and Lahore delivery projects use synthetic practice data. Pictures are screenshots of my own dashboards.</p>
+  </div>
 </footer>
 
-<div class="modal" id="detail"><div class="sheet"><button class="x" data-close aria-label="Close">×</button><div id="detailBody"></div></div></div>
+<dialog id="detail"><div class="in"><button class="x" data-close aria-label="Close">×</button><div id="detailBody"></div></div></dialog>
+<dialog id="owner"><div class="in"><button class="x" data-close aria-label="Close">×</button><div id="ownerBody"></div></div></dialog>
+<div class="toast" id="toast" role="status"></div>
 
-<div class="modal" id="pinModal"><div class="sheet" style="width:min(380px,100%);text-align:center">
-  <button class="x" data-close aria-label="Close">×</button>
-  <h3 style="margin-right:0">Owner access</h3><p class="sub" style="margin:0 auto 8px">Enter your PIN to upload content.</p>
-  <form id="pinForm"><input id="pin" type="password" inputmode="numeric" autocomplete="off" placeholder="PIN" style="text-align:center;letter-spacing:.4em" required><div class="err" id="pinErr"></div><button class="btn" style="width:100%;justify-content:center;margin-top:8px">Unlock</button></form>
-</div></div>
-
-<div class="modal" id="upModal"><div class="sheet">
-  <button class="x" data-close aria-label="Close">×</button>
-  <h3>Upload to portfolio</h3>
-  <form id="upForm">
-    <label>Section</label>
-    <select id="upKind"><option value="project">Project</option><option value="dashboard">Dashboard / report</option><option value="cert">Certificate</option></select>
-    <label>Title *</label><input id="upTitle" required maxlength="120">
-    <div class="two"><div><label id="upTagL">Category / tools</label><input id="upTag" maxlength="60" placeholder="e.g. Machine Learning"></div>
-    <div><label>Filter group</label><select id="upGroup"><option value="eda">EDA & Finance</option><option value="bi">BI & Commercial</option><option value="nlp">NLP & AI</option><option value="ml">Machine Learning</option><option value="sql">SQL & Audit</option></select></div></div>
-    <div class="two"><div><label>Key metric 1</label><input id="upM1" maxlength="40" placeholder="R² 0.86"></div><div><label>Key metric 2</label><input id="upM2" maxlength="40" placeholder="22K rows"></div></div>
-    <label>Description</label><textarea id="upDesc" rows="3" maxlength="600"></textarea>
-    <label>Link (optional)</label><input id="upUrl" type="url" placeholder="https://">
-    <label>Image or PDF (optional)</label><input id="upFile" type="file" accept="image/*,application/pdf">
-    <div class="err" id="upErr"></div>
-    <button class="btn" id="upBtn" style="width:100%;justify-content:center;margin-top:8px">Save to portfolio</button>
-  </form>
-</div></div>
-<div class="toast" id="toast"></div>
-
-<script>
-const PINH="8c454536b6e2b8b29a1d839aa3c5ccf0ab57a590d619739b23a32d11585220c9";
-const sha=async t=>[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)))].map(b=>b.toString(16).padStart(2,"0")).join("");
-const C={amber:'var(--amber)',mint:'var(--mint)',sky:'var(--sky)',coral:'var(--coral)'};
-const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const $=id=>document.getElementById(id);
-const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2400)};
-
-/* ---------- built-in content ---------- */
-const A={"dec": ["img/dec-1.webp", "img/dec-2.webp", "img/dec-3.webp", "img/dec-4.webp", "img/dec-5.webp", "img/dec-6.webp", "img/dec-7.webp", "img/dec-8.webp", "img/dec-9.webp", "img/dec-10.webp", "img/dec-11.webp", "img/dec-12.webp", "img/dec-13.webp"], "cs_deck": ["img/cs_deck-1.webp", "img/cs_deck-2.webp", "img/cs_deck-3.webp", "img/cs_deck-4.webp", "img/cs_deck-5.webp", "img/cs_deck-6.webp", "img/cs_deck-7.webp", "img/cs_deck-8.webp", "img/cs_deck-9.webp", "img/cs_deck-10.webp"], "mp_deck1": ["img/mp_deck1-1.webp", "img/mp_deck1-2.webp", "img/mp_deck1-3.webp", "img/mp_deck1-4.webp", "img/mp_deck1-5.webp", "img/mp_deck1-6.webp", "img/mp_deck1-7.webp", "img/mp_deck1-8.webp", "img/mp_deck1-9.webp", "img/mp_deck1-10.webp", "img/mp_deck1-11.webp", "img/mp_deck1-12.webp", "img/mp_deck1-13.webp", "img/mp_deck1-14.webp"], "mp_deck2": ["img/mp_deck2-1.webp", "img/mp_deck2-2.webp", "img/mp_deck2-3.webp", "img/mp_deck2-4.webp", "img/mp_deck2-5.webp", "img/mp_deck2-6.webp", "img/mp_deck2-7.webp", "img/mp_deck2-8.webp", "img/mp_deck2-9.webp"], "cs_report": ["img/cs_report-1.webp", "img/cs_report-2.webp", "img/cs_report-3.webp", "img/cs_report-4.webp", "img/cs_report-5.webp", "img/cs_report-6.webp"], "ai_report": ["img/ai_report-1.webp", "img/ai_report-2.webp", "img/ai_report-3.webp"], "c1": ["img/c1-1.webp"], "c2": ["img/c2-1.webp"], "c3": ["img/c3-1.webp"], "c4": ["img/c4-1.webp"], "c5": ["img/c5-1.webp"], "dash_cs": ["img/dash_cs-1.webp"]};
-const CODE={"lahore": "import pandas as pd\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.metrics.pairwise import cosine_similarity\n\nfile=\"/content/lahore_tour_guide_chatbot_data_10k.csv\"\ndf=pd.read_csv(file)\n\nquestions = df[\"User_Question\"].fillna(\"\").astype(str)\nvectorizer = TfidfVectorizer(\n    lowercase=True,\n    stop_words=\"english\"\n)\nquestion_vectors = vectorizer.fit_transform(questions)\n\n# CHATBOT FUNCTION\ndef chart_bot(user_question):\n    # Convert user's question into TF-IDF vector\n    user_vector = vectorizer.transform([user_question])\n    # Calculate similarity\n    similarity = cosine_similarity(\n        user_vector,\n        question_vectors\n    )[0]\n    # Find best matching question\n    best_index = similarity.argmax()\n    # Get similarity score\n    best_score = similarity[best_index]\n    # Get answer\n    answer = df.iloc[best_index][\"Answer\"]\n    # Get category\n    category = df.iloc[best_index][\"Category\"]\n    # Get place\n    place = df.iloc[best_index][\"Place\"]\n    # Confidence checking\n    if best_score < 0.15:\n        return (\n            \"Sorry, I don't have enough information \"\n            \"about this in my Lahore Tour Guide data.\"\n        )\n    # Return result\n    return f\"\"\"\nCategory: {category}\n\nPlace: {place}\n\nAnswer: {answer}\n\nSimilarity Score: {best_score:.2f}\n\"\"\"\n# START CHATBOT\nprint(\"\\n\")\nprint(\"        WELCOME TO LAHORE TOUR GUIDE CHAT BOT\")\n\nprint(\"\"\"\nAsk questions about Lahore.\n\nExamples:\n\n- What is Lahore Fort?\n- What places should I visit?\n- Where can I eat Lahori food?\n- What can I see in Lahore in one day?\n- Tell me about Badshahi Mosque.\n- Where can I shop in Lahore?\n\nType 'exit' to stop.\n\"\"\")\n\nwhile True:\n    user_question = input(\"\\nYou: \")\n    # Exit chatbot\n    if user_question.lower().strip() == \"exit\":\n        print(\n            \"\\nBot: Goodbye! Have a nice day!\"\n        )\n        break\n    # Check empty question\n    if not user_question.strip():\n        print(\n            \"\\nBot: Please enter your question.\"\n        )\n        continue\n\n    # Get chatbot answer\n    answer = chart_bot(user_question)\n\n    # Display answer\n    print(f\"\\nBot: {answer}\")", "ai": "# ============================================================\n# \ud83c\udfac MOVIE MATCHMAKER\n# Optimized Movie Recommendation System\n# ============================================================\n\n# ============================================================\n# 1. IMPORTS\n# ============================================================\n\nimport os\nimport html as _html\nimport random\nimport warnings\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport ipywidgets as W\n\nfrom sentence_transformers import SentenceTransformer\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nfrom IPython.display import display, clear_output\n\n\n# 2. CONFIGURATION\nDATA_PATH = \"/content/movies_10k.csv\"\n\n# Fallback if running outside Google Colab\nif not os.path.exists(DATA_PATH):\n    DATA_PATH = \"movies_1M.csv\"\n\nif not os.path.exists(DATA_PATH):\n    raise FileNotFoundError(\n        f\"Movie dataset not found.\\nExpected file: {DATA_PATH}\"\n    )\n\nMODEL_NAME = \"all-MiniLM-L6-v2\"\n\n# Embedding configuration\nBATCH_SIZE = 32\nEMBEDDING_DTYPE = np.float32\n\n# Recommendation configuration\nPOOL_SIZE = 200\n\n# Cache files\nCACHE_DIR = os.path.dirname(DATA_PATH) or \".\"\nEMB_CACHE = os.path.join(CACHE_DIR, \"movie_embeddings.npy\")\nMETA_CACHE = os.path.join(CACHE_DIR, \"movie_embeddings_meta.npz\")\nprint(\"Loading movie dataset...\")\n\ndf = pd.read_csv(\n    DATA_PATH,\n    engine=\"python\",\n    on_bad_lines=\"warn\"\n)\n\ndf = df.reset_index(drop=True)\n\nprint(f\"Loaded {len(df):,} movies.\")\n\n\n# CLEAN DATA\n\nrequired_columns = [\n    \"Title\",\n    \"Genre\",\n    \"Overview\",\n    \"Keywords\",\n    \"Rating\"\n]\n\nmissing_columns = [\n    col for col in required_columns\n    if col not in df.columns\n]\n\nif missing_columns:\n    raise ValueError(\n        f\"Missing required columns: {missing_columns}\"\n    )\n\n\ndf[\"Title\"] = df[\"Title\"].fillna(\"\").astype(str)\ndf[\"Genre\"] = df[\"Genre\"].fillna(\"\").astype(str)\ndf[\"Overview\"] = df[\"Overview\"].fillna(\"\").astype(str)\ndf[\"Keywords\"] = df[\"Keywords\"].fillna(\"\").astype(str)\n\ndf[\"Rating\"] = pd.to_numeric(\n    df[\"Rating\"],\n    errors=\"coerce\"\n)\n\n\n# CREATE COMBINED TEXT\n# Combining the fields used by the original recommendation system\n\ndf[\"Combine Text\"] = (\n    df[\"Genre\"]\n    + \" \"\n    + df[\"Overview\"]\n    + \" \"\n    + df[\"Keywords\"]\n).str.strip()\n\n\n\n# 6. OPTIONAL TF-IDF\n# Kept because it was part of the original project.\n# It can be removed if you only want Sentence-BERT.\n\nvectorizer = TfidfVectorizer(\n    stop_words=\"english\",\n    max_features=100000\n)\n\nvectors = vectorizer.fit_transform(\n    df[\"Combine Text\"]\n)\n\nprint(\n    f\"TF-IDF matrix created: {vectors.shape}\"\n)\n\n\n\n# LOAD SENTENCE-BERT\n\n\nprint(\"Loading Sentence-BERT model...\")\n\nmodel = SentenceTransformer(MODEL_NAME)\n\nprint(\"Sentence-BERT model loaded successfully.\")\n\n\n\n# EMBEDDING CACHE\n\n\ndef create_embeddings():\n    \"\"\"\n    Create movie embeddings in batches.\n\n    This avoids sending the complete movie dataset through\n    Sentence-BERT as one enormous operation.\n    \"\"\"\n\n    texts = df[\"Combine Text\"].tolist()\n\n    print(\n        f\"Creating embeddings for {len(texts):,} movies...\"\n    )\n\n    print(\n        f\"Batch size: {BATCH_SIZE}\"\n    )\n\n    embeddings = model.encode(\n        texts,\n        batch_size=BATCH_SIZE,\n        show_progress_bar=True,\n        convert_to_numpy=True,\n        normalize_embeddings=True\n    )\n\n    embeddings = embeddings.astype(\n        EMBEDDING_DTYPE,\n        copy=False\n    )\n\n    np.save(\n        EMB_CACHE,\n        embeddings\n    )\n\n    np.savez(\n        META_CACHE,\n        row_count=len(df),\n        embedding_dim=embeddings.shape[1]\n    )\n\n    print(\n        f\"Embeddings saved to: {EMB_CACHE}\"\n    )\n\n    return embeddings\n\n\ndef load_cached_embeddings():\n    \"\"\"\n    Load cached embeddings only when they match\n    the current dataset.\n    \"\"\"\n\n    if not os.path.exists(EMB_CACHE):\n        return None\n\n    try:\n\n        embeddings = np.load(\n            EMB_CACHE,\n            mmap_mode=\"r\"\n        )\n\n        if embeddings.ndim != 2:\n            print(\"Invalid embedding cache.\")\n            return None\n\n        if embeddings.shape[0] != len(df):\n            print(\n                \"Embedding cache does not match dataset size.\"\n            )\n            return None\n\n        print(\n            f\"Loaded cached embeddings: {embeddings.shape}\"\n        )\n\n        return np.asarray(\n            embeddings,\n            dtype=EMBEDDING_DTYPE\n        )\n\n    except Exception as e:\n\n        print(\n            f\"Could not load embedding cache: {e}\"\n        )\n\n        return None\n\n\n# LOAD OR CREATE EMBEDDINGS\n\n\nmovie_embeddings = load_cached_embeddings()\n\nif movie_embeddings is None:\n\n    movie_embeddings = create_embeddings()\n\nelse:\n\n    print(\n        \"Using existing movie embeddings.\"\n    )\n\n\nprint(\n    f\"Final embedding shape: {movie_embeddings.shape}\"\n)\n\n\n # COLUMN CONFIGURATION\n\n\ntitle_column = \"Title\"\nrating_column = \"Rating\"\ngenre_column = \"Genre\"\n\n# FAST SIMILARITY FUNCTION\n\n\ndef calculate_similarity(query_embedding):\n    \"\"\"\n    Because both movie embeddings and query embeddings are\n    normalized, cosine similarity becomes a simple matrix\n    multiplication.\n    \"\"\"\n\n    query_embedding = np.asarray(\n        query_embedding,\n        dtype=EMBEDDING_DTYPE\n    )\n\n    return np.dot(\n        movie_embeddings,\n        query_embedding.T\n    ).ravel()\n\n\n\n#RECOMMENDATION ENGINE\n\ndef recommend_movies(\n    user_input=None,\n    number_of_movies=10,\n    min_rating=0.0,\n    genre=None,\n    sort_by=\"match\",\n    hide_duplicates=True,\n    query_embedding=None,\n    exclude_title=None\n):\n\n    \"\"\"\n    Return recommended movies.\n\n    sort_by:\n        match  -> closest semantic matches\n        rating -> highest rated among good matches\n        blend  -> similarity + rating\n    \"\"\"\n\n    # --------------------------------------------------------\n    # Create query embedding\n    # --------------------------------------------------------\n\n    if query_embedding is None:\n\n        if not user_input:\n            return df.iloc[0:0].c\n\n# \u2026 (truncated)", "cs": "import pandas as pd\n\ndf=pd.read_csv(\"D:3\\customer_shopping_behavior.csv\")\ndf.head()\n\n\ndf.info()\n\ndf.describe(include='all')\n\ndf.isnull().sum()\n\ndf['Review Rating']=df.groupby('Category')['Review Rating'].transform(lambda x: x.fillna(x.median()))\n\ndf.isnull().sum()\n\ndf.columns = df.columns.str.lower()\ndf.columns = df.columns.str.replace(\" \",\"_\")\ndf = df.rename(columns={'purchase_amount_(usd)':'purchase_amount'})\n\ndf.columns\n\n#CREATING COLUMNS FOR age_gab\nlabels=[\"Young Adult\",\"Adult\",\"Middle-aged\",\"Senior\"]\ndf['age_gab']=pd.qcut(df['age'] ,q=4 , labels = labels)\n\ndf[['age','age_gab']].head(10)\n\n#CREATING COLUMN purchase_frequency_day\nfrequency_mapping={\n    \"Fortnightly\":14,\n    \"Weekly\":7,\n    \"Monthly\":30,\n    \"Quarterly\":90,\n    \"Bi-Weekly\":14,\n    \"Annually\":365,\n    \"Every 3 Months\":90   \n}\ndf['purchase_frequency_day']=df['frequency_of_purchases'].map(frequency_mapping)\n\ndf[['frequency_of_purchases','purchase_frequency_day']].head(10)\n\n#CHECKING COLUMNS\ndf[['discount_applied','promo_code_used']].head(10)\n\n#NOW CHECK IF BOTH COLUMNS HAVE SAME VALUE\n(df['discount_applied'] == df['promo_code_used']).all()\n\n#SO REMOVE PROMO CODE USED COLUMN\ndf = df.drop('promo_code_used',axis=1)\n\ndf.columns\n\npip install pandas mysql-connector-python sqlalchemy\n\nimport pandas as pd\nfrom sqlalchemy import create_engine\n\n\n\n# 2. Database credentials\nuser = \"root\"\npassword = \"********\"\nhost = \"localhost\"\ndatabase = \"customer_behavior\"\ntable_name = \"customer_data\"  # Name of the table you want to create/update\n\n# 3. Create database connection engine using SQLAlchemy\nengine = create_engine(\n    f\"mysql+mysqlconnector://{user}:{password}@{host}/{database}\"\n)\n\n# 4. Import CSV data into MySQL\n# if_exists options: 'fail', 'replace', or 'append'\ndf.to_sql(name=table_name, con=engine, if_exists=\"replace\", index=False)\n\nprint(\n    f\"Successfully imported {len(df)} rows into '{database}.{table_name}'.\"\n)", "mp": "import pandas as pd \nimport matplotlib.pyplot as plt\nimport seaborn as sns\ndf=pd.read_excel(\"D:3\\megapik_raw_movie_data.xlsx\")\ndf.head()\n\ndf.info()\n\ndf['Release Date']=pd.to_datetime(df['Release Date'])\n\n#MAKING NEW COLUMS FOR RELEASE YEAR AND MONTH AND QUARTER\ndf['Release Year']=df['Release Date'].dt.strftime(\"%Y\")\ndf['Release Month']=df['Release Date'].dt.strftime(\"%b-%Y\")\ndf['Release Quarter']=df['Release Date'].dt.to_period('Q').dt.strftime(\"Q-%q\")\n\n#TOTAL INVESTMENT\ndf['Total Cost']=df['Budget ($M)']+df['Marketing Costs ($M)']\n\n#OPEINING WEEKEND VELOCITY\ndf['Opening Night Share']=df['Opening Night Revenue ($M)']/df['Opening Weekend Revenue ($M)'].div(100)\n#OPEING ROI MARGIN\ndf['Opening ROI']=(df['Opening Weekend Revenue ($M)'] - df['Total Cost'])/df['Total Cost']\n\ndf.head()\n\n\ngenre_summary = (\n    df.groupby('Genre')\n    .agg(\n        Count=('Movie Name', 'count'),\n        Avg_Budget=('Budget ($M)', 'mean'),\n        Avg_Opening_Weekend=('Opening Weekend Revenue ($M)', 'mean'),\n    )\n    .sort_values(by='Avg_Opening_Weekend', ascending=False)\n)\n\nprint(genre_summary)\n\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\n\n# Set style\nsns.set_theme(style='whitegrid')\nplt.rcParams['font.sans-serif'] = 'DejaVu Sans'\n\n# Load data & calculate metrics\ndf['Total_Cost'] = df['Budget ($M)'] + df['Marketing Costs ($M)']\ndf['Est_Total_Revenue'] = df['Opening Weekend Revenue ($M)'] * 2.8\ndf['Lifetime_ROI_Pct'] = (\n    (df['Est_Total_Revenue'] - df['Total_Cost']) / df['Total_Cost']\n) * 100\n\n# 2x2 Dashboard Figure\nfig, axes = plt.subplots(2, 2, figsize=(16, 12))\nfig.suptitle(\n    'MEGA-PIK ENTERTAINMENT \u2014 EXECUTIVE EDA DASHBOARD',\n    fontsize=18,\n    fontweight='bold',\n    y=0.98,\n    color='#0F172A',\n)\n\n# 1. Correlation Matrix\nax1 = axes[0, 0]\nnum_cols = [\n    'Budget ($M)',\n    'Marketing Costs ($M)',\n    'Total_Cost',\n    'Opening Night Revenue ($M)',\n    'Opening Weekend Revenue ($M)',\n]\nsns.heatmap(\n    df[num_cols].corr(),\n    annot=True,\n    cmap='Blues',\n    fmt='.2f',\n    cbar=True,\n    ax=ax1,\n    linewidths=0.5,\n    annot_kws={'size': 10, 'weight': 'bold'},\n)\nax1.set_title(\n    '1. Correlation Matrix: Opening Weekend Drivers',\n    fontsize=12,\n    fontweight='bold',\n    pad=12,\n)\n\n# 2. Budget vs Opening Weekend\nax2 = axes[0, 1]\npalette_ratings = {\n    'G': '#10B981',\n    'PG': '#3B82F6',\n    'PG-13': '#8B5CF6',\n    'R': '#EF4444',\n}\nsns.scatterplot(\n    data=df,\n    x='Budget ($M)',\n    y='Opening Weekend Revenue ($M)',\n    hue='Ratings',\n    palette=palette_ratings,\n    alpha=0.75,\n    s=55,\n    ax=ax2,\n)\nsns.regplot(\n    data=df,\n    x='Budget ($M)',\n    y='Opening Weekend Revenue ($M)',\n    scatter=False,\n    ax=ax2,\n    color='#334155',\n    line_kws={'linestyle': '--', 'linewidth': 1.5},\n)\nax2.set_title(\n    '2. Budget vs. Opening Weekend Revenue (by Rating)',\n    fontsize=12,\n    fontweight='bold',\n    pad=12,\n)\n\n# 3. Genre Benchmarks\nax3 = axes[1, 0]\ngenre_perf = (\n    df.groupby('Genre')\n    .agg(\n        Avg_Budget=('Budget ($M)', 'mean'),\n        Avg_Marketing=('Marketing Costs ($M)', 'mean'),\n        Avg_Opening=('Opening Weekend Revenue ($M)', 'mean'),\n    )\n    .sort_values(by='Avg_Opening', ascending=False)\n)\n\nx = np.arange(len(genre_perf))\nwidth = 0.26\nax3.bar(\n    x - width,\n    genre_perf['Avg_Budget'],\n    width,\n    label='Avg Budget ($M)',\n    color='#3B82F6',\n)\nax3.bar(\n    x,\n    genre_perf['Avg_Marketing'],\n    width,\n    label='Avg Marketing ($M)',\n    color='#F59E0B',\n)\nax3.bar(\n    x + width,\n    genre_perf['Avg_Opening'],\n    width,\n    label='Avg Opening Weekend ($M)',\n    color='#10B981',\n)\nax3.set_title(\n    '3. Genre Benchmarks: Cost vs. Opening Revenue ($M)',\n    fontsize=12,\n    fontweight='bold',\n    pad=12,\n)\nax3.set_xticks(x)\nax3.set_xticklabels(genre_perf.index, rotation=30, ha='right', fontweight='bold')\nax3.legend()\n\n# 4. Lifetime ROI Distribution\nax4 = axes[1, 1]\ngenre_order = (\n    df.groupby('Genre')['Lifetime_ROI_Pct']\n    .median()\n    .sort_values(ascending=False)\n    .index\n)\nsns.boxplot(\n    data=df,\n    x='Genre',\n    y='Lifetime_ROI_Pct',\n    order=genre_order,\n    palette='Blues_r',\n    ax=ax4,\n    showmeans=True,\n    meanprops={\n        'marker': 'o',\n        'markerfacecolor': 'red',\n        'markeredgecolor': 'red',\n        'markersize': '5',\n    },\n)\nax4.axhline(\n    0,\n    color='#DC2626',\n    linestyle='--',\n    linewidth=1.2,\n    label='Break-Even (0% ROI)',\n)\nax4.set_title(\n    '4. Estimated Lifetime ROI % Distribution by Genre',\n    fontsize=12,\n    fontweight='bold',\n    pad=12,\n)\nax4.set_xticklabels(genre_order, rotation=30, ha='right', fontweight='bold')\nax4.legend(loc='upper right')\n\nplt.tight_layout(rect=[0, 0.03, 1, 0.95])\nplt.savefig('megapik_executive_dashboard.png', dpi=300, bbox_inches='tight')\nplt.show()\n\n\"\"\"Step 4: Formulate the Strategy for Mega-Pik Executives\nTranslate the findings into concrete business recommendations for their remake strategy:\n\nRemake Catalog Selection: Prioritize legacy IP in Action, Adventure, and Animation for large-scale tentpoles, as they consistently lead in raw box-office volume and brand recognition.\n\nLow-Risk Counter-Programming: Allocate a portion of the slate to Horror and Comedy remakes. These have low production floors ($15M\u2013$35M) and provide high downside protection.\n\nMarketing Prioritization: Budget pre-release marketing at 45% to 55% of the production budget to drive Thursday preview turnout, which serves as the primary engine for opening weekend scale.\"\"\""};
-const SEED=[
-{kind:'dashboard',c:'sky',tag:'Python · Statistics · Power BI',title:'Dubai Real Estate Market Analyzer',loc:[25.20,55.27,'Dubai'],desc:'1,800 Dubai property sales (synthetic data) analysed to answer where to invest, when to buy and whether off-plan is really cheaper, with a 4-page interactive dashboard.',m:['7.5% top yield','Regression R² 0.91'],img:'img/dubai-1.webp',url:'https://umairasifofficalll-code.github.io/Dubai-Real-Estate-Market-Analyzer/dashboard/dubai_real_estate_dashboard.html',gh:'https://github.com/umairasifofficalll-code/Dubai-Real-Estate-Market-Analyzer',feat:1,pts:['Highest gross rental yields in Dubai South (7.5%) and JVC (7.1%), versus 4.2% in Palm Jumeirah.','Off-plan looks 6.9% cheaper overall but costs 4.5–13.7% more within every area: a Simpson\'s paradox caused by area mix.','Price trends and area gaps tested with t-tests and ANOVA; a regression explains 91% of sale price.']},
-{kind:'dashboard',c:'mint',tag:'Python · JavaScript · Finance',title:'Gulf Market Tracker: Stock Risk & Return',loc:[24.71,46.68,'Gulf (Riyadh · Dubai · Abu Dhabi)'],desc:'12 Gulf equities on DFM, ADX and Tadawul over 3+ years: returns, volatility, Sharpe, beta, drawdown and correlations in a live 3-page dashboard (synthetic data).',m:['Index +24.2%','Best Sharpe 1.03'],img:'img/gulf-1.webp',url:'https://umairasifofficalll-code.github.io/gulf-market-tracker-dashboard/',gh:'https://github.com/umairasifofficalll-code/gulf-market-tracker-dashboard',pts:['Sky Arabia Airlines led with +249% total return but was the most volatile stock (41.5% a year).','Gulf Telecom gave the best risk-adjusted return: Sharpe 1.03, beta 0.44 and only an 18.7% max drawdown.','Average correlation between stocks is 0.26, so a mixed portfolio offers real diversification.']},
-{kind:'dashboard',c:'sky',tag:'Python · scikit-learn · Power BI',title:'Digital Nomad City Scorecard',desc:'Where should a remote worker live? 63 cities (simulated data) cleaned, validated and scored 0–100 in a pandas pipeline, then served to a Power BI dashboard with live weight sliders.',m:['63 cities','K-Means k=4'],bars:[70,62,88,54,76,48,82,66],gh:'https://github.com/umairasifofficalll-code/City-Score-Dashboard',pts:['Cleaned 5 raw tables (names, duplicates, missing values) and logged every fix.','Joins use validate= checks and the master table is asserted at exactly 63 cities, so bad joins stop the pipeline.','Min-max scoring with adjustable weights recalculated live in DAX, plus K-Means grouping into 4 city types.']},
-{kind:'dashboard',c:'amber',tag:'Excel · Python · MySQL · Power BI',title:'Lahore Food Delivery Demand & Delay',loc:[31.55,74.34,'Lahore'],desc:'A deliberately messy file of 51,150 delivery orders (synthetic, 2024–2025) cleaned in pandas, queried in MySQL and turned into a one-page Power BI dashboard.',m:['51,150 orders','+26.5% Ramadan spike'],bars:[55,62,90,70,68,72,66,74],gh:'https://github.com/umairasifofficalll-code/Lahore-Food-Delivery-Delay-Analysis',pts:['Fixed mixed date formats, numbers stored as text, misspellings, impossible values and duplicates.','Window-function SQL ranks delay rate by area and hour and cancellations by restaurant category.','Orders jumped 26.5% in the Ramadan month, then held steady at about 2,030–2,080 a month.']},
-{kind:'dashboard',c:'coral',tag:'MySQL · Power BI · Time series',title:'Lahore Air Quality vs Daily Life',loc:[31.55,74.34,'Lahore'],desc:'How Lahore\'s smog seasons line up with weather, public search behaviour, healthcare load and policy interventions (2023–2025).',m:['Hourly AQI','Before/after policy test'],bars:[30,45,70,95,88,60,40,35],gh:'https://github.com/umairasifofficalll-code/Lahore-Air-Quality-vs.-Daily-Life-Smog-Impact-Tracker',pts:['MySQL schema with constraints and foreign keys, plus materialised views for Power BI.','Queries for weather stagnation vs AQI severity and the hourly inversion effect.','Year-over-year smog-season comparison and a before/after test of policy interventions.']},
-{kind:'dashboard',c:'sky',tag:'Power BI · Retail',title:'Decathlon Sales & Customer Analytics',loc:[19.08,72.88,'India'],desc:'Omnichannel view of 30,000 orders and 8,998 customers: category shares, monthly sales velocity, retention and gender mix.',m:['₹367.1 Cr sales','64.58% retention'],bars:[40,55,48,70,62,85,74,92],img:A.dec[2],docs:[['Read the deck (12 slides)','dec']]},
-{kind:'dashboard',c:'mint',tag:'Power BI · Fintech',title:'PhonePe Transaction Analysis',gh:'https://github.com/umairasifofficalll-code/PhonePe-Transaction-Analytics',loc:[19.08,72.88,'India'],desc:'3.47bn in volume across 300K transactions and 101K users, with month-over-month growth, weekday vs weekend split and cohort shares.',m:['96% success','101K users'],bars:[30,42,58,52,68,66,80,88]},
-{kind:'dashboard',c:'amber',tag:'Power BI · Segmentation',title:'Customer Shopping Behaviour',gh:'https://github.com/umairasifofficalll-code/Customer-Shopping-Behavior-Analysis',desc:'3.9K shoppers sliced by subscription, gender, category and shipping type. 27% subscribe; average purchase is $59.76.',m:['3.75 / 5 rating','$59.76 avg'],bars:[60,45,72,38,80,55,66,50],img:A.dash_cs[0],docs:[['Read the report (6 pages)','cs_report'],['View the slides (10)','cs_deck']]},
-{kind:'dashboard',c:'coral',tag:'Data audit report',title:'NYC Taxi Inspection Report',gh:'https://github.com/umairasifofficalll-code/NYC-Yellow-Taxi-trip-analysis-covering-data-cleaning',loc:[40.71,-74.01,'New York'],desc:'Audit of 22,699 trips across 18 variables. Flags negative fares and missing cash tips that must be fixed before fare modelling.',m:['22,699 trips','67% card'],bars:[80,20,35,60,25,45,30,55]},
-{kind:'project',g:'ml',c:'mint',tag:'Churn prediction · BCG simulation',title:'PowerCo SME Customer Churn & Retention',loc:[50.11,8.68,'Europe'],desc:'Predicted which of 14,606 small-business energy customers are likely to leave, and why, to shape a retention strategy.',m:['14,606 clients','73% precision'],gh:'https://github.com/umairasifofficalll-code/PowerCo-SME-Customer-Churn-Retention-Strategy',pts:['EDA and feature engineering on client and price data (consumption, margins, price changes).','Random Forest: 90.8% accuracy and 73% precision on churners; recall is low (8%), so class rebalancing is the next step.','Top drivers: 12-month consumption, forecast meter rent, net margin and forecast consumption.']},
-{kind:'project',g:'eda',c:'sky',tag:'Real-estate EDA',title:'Gurugram Real Estate Market Analysis',loc:[28.46,77.03,'Gurugram'],desc:'Property prices across Gurugram by locality, size, BHK configuration, property type, RERA approval and developer.',m:['6 property types','pandas · Seaborn'],gh:'https://github.com/umairasifofficalll-code/Data-of-gurugram-real-Estate',pts:['Penthouses carry the highest average price (about ₹13.5 Cr), ahead of houses and villas.','Apartments average about ₹4.3 Cr; plots and builder floors are the cheapest entry points.','Ranked localities by average price and price per square foot.']},
-{kind:'project',g:'eda',c:'amber',tag:'Sales EDA',title:'Superstore Sales Analysis',desc:'6,120 orders (2019–2026) cleaned and analysed for yearly and monthly sales, profit trends, category performance, top products and the effect of discounts on profit.',m:['6,120 orders','2019–2026'],gh:'https://github.com/umairasifofficalll-code/Superstore-Sales-Data-Analysis',pts:['Handled missing values and converted dates for time-based analysis.','Compared sales and profit by year, month, category and segment.','Showed where heavy discounts erode profit.']},
-{kind:'project',g:'eda',c:'coral',tag:'E-commerce EDA',title:'E-Commerce Sales Analysis Dashboard',desc:'Python dashboard of monthly sales, category performance and customer segments built with pandas, NumPy, Matplotlib and Seaborn.',m:['7-chart dashboard','Seaborn'],gh:'https://github.com/umairasifofficalll-code/E-Commerce-Sales-Analysis-Dashboard',pts:['Cleaned and pre-processed order data and engineered time features.','Built a multi-panel Seaborn dashboard of monthly trends and category mix.','Summarised the top categories and customer segments.']},
-{kind:'project',g:'eda',c:'amber',tag:'Financial EDA',title:'Unicorn Companies: Global Valuation EDA',desc:'Cleaned missing data, converted string valuations to numbers, engineered datetime features and mapped valuations worldwide.',m:['pandas','Plotly geo'],pts:['Compared row-drop, column-drop and back-fill for missing values.','Removed the US, China, India and UK outliers to show emerging markets.','Built scatter_geo bubble maps of valuation by country.']},
-{kind:'project',g:'bi',c:'sky',tag:'Commercial analytics',title:'Decathlon Retail Performance',loc:[19.08,72.88,'India'],desc:'30,000 records analysed for revenue drivers, channel balance and retention across Indian metros.',m:['₹367M revenue','30.7% margin'],img:A.dec[4],docs:[['Read the deck (12 slides)','dec']],pts:['Cycling is the anchor category at ₹80.59M (22%).','Web, stores and app each contribute about a third of revenue.','Returning customers bring 75.2% of revenue; return rate is 8.05%.']},
-{kind:'project',g:'nlp',c:'mint',tag:'Sentence-BERT',title:'AI Movie Recommendation Engine',gh:'https://github.com/umairasifofficalll-code/Movie-Matchmaker-Semantic-Recommendation-Engine',desc:'Semantic search over 1M+ movies using 384-dimension embeddings and cosine similarity.',m:['1M+ records','384-D vectors'],img:A.ai_report[0],docs:[['Read the report (3 pages)','ai_report']],code:['ai'],pts:['Merged genre, overview and keywords into one text feature.','Encoded with all-MiniLM-L6-v2 and ranked by cosine match.','Exported top-10 tables and Seaborn charts.']},
-{kind:'project',g:'nlp',c:'coral',tag:'TF-IDF chatbot',title:'Lahore Tour Guide Chatbot',loc:[31.55,74.34,'Lahore'],desc:'Matches traveller questions to places and food across Lahore using TF-IDF and a confidence guardrail.',m:['10,000+ Q&A','0.15 fallback'],code:['lahore'],pts:['Scikit-learn TfidfVectorizer with stop-word filtering.','Low-confidence answers fall back instead of guessing.','"What is Lahore Fort?" scores 1.00.']},
-{kind:'project',g:'ml',c:'amber',tag:'Machine learning',title:'NYC Taxi Fare Prediction',loc:[40.71,-74.01,'New York'],desc:'EDA, a Welch\'s t-test on payment types and a linear regression model that predicts trip fares.',m:['R² 0.94','Regression'],gh:'https://github.com/umairasifofficalll-code/NYC-Taxi-Fare-Analysis-Hypothesis-Testing-Prediction',pts:['Removed impossible fares, speeds and coordinates.','Tested tip share between card and cash.','Engineered rush-hour and airport features.']},
-{kind:'project',g:'sql',c:'mint',tag:'Forensic simulation',title:'Forensic Risk & Anomaly Analysis',desc:'Deloitte-style audit of transaction records using CTEs, window functions and Benford analysis.',m:['Benford + Z-score','$1.4M flagged'],pts:['Flagged abnormal amounts with standard-deviation windows.','Found duplicate vendor IDs and odd approval chains.','Wrote the risk report and mitigations.']},
-{kind:'project',g:'bi',c:'sky',tag:'Python · MySQL · Power BI',title:'Customer Shopping Behavior Analytics',gh:'https://github.com/umairasifofficalll-code/Customer-Shopping-Behavior-Analysis',desc:'End-to-end pipeline on 3,900 transactions: pandas cleaning, 10 business questions answered in MySQL, and an executive Power BI dashboard.',m:['3,900 records','10 SQL queries'],img:A.dash_cs[0],docs:[['Read the report (6 pages)','cs_report'],['View the slides (10)','cs_deck']],code:['cs'],pts:['Imputed 37 missing ratings with category medians and dropped a redundant promo-code column.','72.4% of repeat buyers (>5 orders) are not subscribed: a clear conversion opportunity.','Male customers generated 67.7% of revenue; Young Adults lead by age group.']},
-{kind:'project',g:'eda',c:'coral',tag:'Box-office EDA',title:'Mega-Pik: Data-Driven Movie Strategy',gh:'https://github.com/umairasifofficalll-code/Executive-Presentation-Report-Data-Driven-Movie-Strategy-for-Mega-Pik-Entertainment',loc:[34.05,-118.24,'Los Angeles'],desc:'EDA of 500 theatrical releases to explain a box-office slump and recommend a balanced remake slate.',m:['500 films','2+4 slate'],img:A.mp_deck1[2],docs:[['Strategy deck (14 slides)','mp_deck1'],['Remake deck (9 slides)','mp_deck2']],code:['mp'],pts:['Opening-night revenue and Thursday previews are the strongest drivers of opening weekend (r≈0.99).','Horror (51.6% median ROI) and Comedy (42.0%) are the safest genres; Action and Drama carry more variance.','Recommended a 2 tentpole + 4 genre-title slate with a 45%–55% marketing-to-budget ratio.']},
-{kind:'cert',c:'amber',tag:'Google · Coursera',title:'Ask Questions to Make Data-Driven Decisions',desc:'Structured problem solving, metric framing and stakeholder scoping.',m:['Issued Sep 25, 2026','ID 6ZPOPD6GAD5N'],url:'https://coursera.org/verify/6ZPOPD6GAD5N',img:A.c1[0]},
-{kind:'cert',c:'mint',tag:'Google · Coursera',title:'Go Beyond the Numbers: Translate Data into Insights',desc:'Exploratory analysis, data cleaning and executive presentation.',m:['Issued Sep 23, 2026','ID OSLLVLXAIK2R'],url:'https://coursera.org/verify/OSLLVLXAIK2R',img:A.c2[0]},
-{kind:'cert',c:'sky',tag:'Google · Coursera',title:'Foundations: Data, Data, Everywhere',desc:'Analyst roles, the data lifecycle and core analysis tools.',m:['Issued Sep 14, 2026','ID NE4OT8M5VC7C'],url:'https://coursera.org/verify/NE4OT8M5VC7C',img:A.c3[0]},
-{kind:'cert',c:'coral',tag:'Google · Coursera',title:'Foundations of Data Science',desc:'Introduction to data science practice and career paths.',m:['Issued Aug 24, 2026','ID E0NVQYVDCOLD'],url:'https://coursera.org/verify/E0NVQYVDCOLD',img:A.c4[0]},
-{kind:'cert',c:'amber',tag:'TATA · Forage',title:'Data Visualisation: Empowering Business with Effective Insights',desc:'Job simulation: framing the business scenario, choosing the right visuals, building them and communicating insights.',m:['Issued Aug 15, 2026','Job simulation'],img:A.c5[0]},
-{kind:'cert',c:'sky',tag:'Google · Coursera',title:'Prepare Data for Exploration',desc:'Data collection, bias and credibility, data ethics and organising data with SQL and spreadsheets.',m:['Issued Oct 2026','ID 5XCAZN67ZVL2'],url:'https://coursera.org/verify/5XCAZN67ZVL2'},
-{kind:'cert',c:'mint',tag:'Deloitte · Forage',title:'Data Analytics Job Simulation',desc:'Job simulation: data analysis and forensic technology tasks for a client engagement.',m:['Issued Jul 2026','Job simulation']},
-{kind:'cert',c:'coral',tag:'BCG · Forage',title:'Introduction to Data for Decision Makers',desc:'Advised a client on multi-channel ad campaign performance from conversion data and gave a data-backed recommendation.',m:['Issued Oct 2026','Job simulation']},
-{kind:'cert',c:'amber',tag:'HP LIFE',title:'Data Science & Analytics; AI for Business Professionals',desc:'Two HP LIFE courses on data science practice and applying AI in business.',m:['Issued Jul 2026','2 courses']}
-];
-const rio='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');rio.unobserve(x.target)}}),{rootMargin:'0px 0px -8% 0px'}):null;
-function reveal(){document.querySelectorAll('.rv:not(.in)').forEach(e=>rio?rio.observe(e):e.classList.add('in'))}
-const ownChk=()=>{if(/owner/.test(location.hash+location.search))document.documentElement.classList.add('own')};ownChk();addEventListener('hashchange',ownChk);
-let live=[]; // owner uploads (shared via db, session-only if db is unavailable)
-let filter='all';
-const GROUPS={all:'All',eda:'EDA & Finance',bi:'BI & Commercial',nlp:'NLP & AI',ml:'Machine Learning',sql:'SQL & Audit'};
-const items=()=>[...live,...SEED.map((s,i)=>({...s,id:'s'+i}))];
-
-const th=p=>/^img\//.test(p||'')&&!/^img\/t\//.test(p)?p.replace('img/','img/t/'):p;
-const ext=(u,l)=>`<a class="ext" href="${esc(u)}" target="_blank" rel="noopener">${l} <span aria-hidden="true">↗</span></a>`;
-function card(it){
-  const c=C[it.c]||C.amber;
-  let top='';
-  if(it.img) top=`<div class="thumb${it.kind==='cert'?' cert':''}" data-open="${it.id}"><img src="${esc(th(it.img))}" alt="${esc(it.title)}" loading="lazy" decoding="async"></div>`;
-  else if(it.kind==='dashboard') top=`<div class="thumb bars" data-open="${it.id}" style="--c:${c}">${(it.bars||[45,60,50,75,65,90]).map((h,i)=>`<i style="--h:${h}%;animation-delay:${i*70}ms"></i>`).join('')}</div>`;
-  const met=(it.m||[]).filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join('');
-  let foot;
-  if(it.kind==='cert') foot=it.url?ext(it.url,'Verify credential'):`<button class="link" data-open="${it.id}">View certificate</button>`;
-  else foot=`<button class="link" data-open="${it.id}">Case study →</button>${it.url?ext(it.url,'Live'):''}${it.gh?ext(it.gh,'Code'):''}`;
-  return `<article class="card rv${it.feat?' feat':''}" style="--c:${c}">${top}<div class="cb"><span class="tag">${esc(it.tag||'')}</span><h3>${esc(it.title)}</h3><p>${esc(it.desc||'')}</p><div class="met">${met}</div><div class="foot">${foot}</div></div></article>`;
-}
-function render(){
-  ['dashboard','project','cert'].forEach(k=>{
-    const list=items().filter(i=>i.kind===k&&(k!=='project'||filter==='all'||i.g===filter));
-    $('g-'+k).innerHTML=list.length?list.map(card).join(''):'<div class="empty">Nothing here yet.</div>';
-  });
-  reveal();
-  $('filters').innerHTML=Object.entries(GROUPS).map(([k,v])=>`<button class="${k===filter?'on':''}" data-f="${k}">${v}</button>`).join('');
-}
-document.addEventListener('click',e=>{
-  const f=e.target.closest('[data-f]');if(f){filter=f.dataset.f;render();return}
-  const o=e.target.closest('[data-open]');if(o){openDetail(o.dataset.open);return}
-  const a=e.target.closest('[data-add]');if(a){askPin(a.dataset.add);return}
-  if(e.target.closest('[data-close]')||e.target.classList.contains('modal'))document.querySelectorAll('.modal').forEach(m=>m.classList.remove('open'));
-});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal').forEach(m=>m.classList.remove('open'))});
-function docBtns(it){const d=(it.docs||[]).map(([l,k])=>`<button data-doc="${k}" data-t="${esc(l)}" data-from="${it.id}">${esc(l)}</button>`),c=(it.code||[]).map(k=>`<button data-code="${k}" data-from="${it.id}">View code</button>`);return d.length||c.length?`<div class="docs">${d.join('')}${c.join('')}</div>`:''}
-function openDetail(id){$('detail').firstElementChild.style.width='';
-  const it=items().find(i=>i.id===id);if(!it)return;
-  const pts=it.pts?`<ul>${it.pts.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:'';
-  const img=it.img?`<img src="${esc(it.img)}" alt="${esc(it.title)}">`:'';
-  const dk=docBtns(it);const lk=(it.url||it.gh)?`<div class="dlinks">${it.url?`<a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">${it.kind==='cert'?'Verify credential':'Open live dashboard'} ↗</a>`:''}${it.gh?`<a class="btn ghost" href="${esc(it.gh)}" target="_blank" rel="noopener">View code on GitHub ↗</a>`:''}</div>`:'';
-  $('detailBody').innerHTML=`${img}<span class="tag mono" style="--c:var(--amber)">${esc(it.tag||'')}</span><h3>${esc(it.title)}</h3><p style="color:var(--mut)">${esc(it.desc||'')}</p>${pts}<div class="met">${(it.m||[]).filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join('')}</div>${dk}${lk}`;
-  $('detail').classList.add('open');
-}
-
-document.addEventListener('click',e=>{
-  const d=e.target.closest('[data-doc]'),c=e.target.closest('[data-code]'),bk=e.target.closest('[data-back]');
-  if(bk){openDetail(bk.dataset.back);return}
-  if(!d&&!c)return;
-  const from=(d||c).dataset.from,sh=$('detail').firstElementChild,back=`<button class="back" data-back="${from}">← Back</button>`;
-  if(d){sh.style.width='min(980px,100%)';$('detailBody').innerHTML=`${back}<h3>${esc(d.dataset.t)}</h3><div class="pages">${(A[d.dataset.doc]||[]).map((s,i)=>`<img src="${s}" alt="Page ${i+1}" loading="lazy">`).join('')}</div>`}
-  else{sh.style.width='min(860px,100%)';$('detailBody').innerHTML=`${back}<h3>Notebook code</h3><pre class="code">${esc(CODE[c.dataset.code]||'')}</pre>`}
-});
-/* ---------- owner portal ---------- */
-let owner=false,target='project';
-function askPin(t){target=t;if(owner)return openUp();$('pin').value='';$('pinErr').textContent='';$('pinModal').classList.add('open');setTimeout(()=>$('pin').focus(),50)}
-$('pinForm').onsubmit=async e=>{e.preventDefault();if(await sha($('pin').value.trim())===PINH){owner=true;$('pinModal').classList.remove('open');openUp()}else $('pinErr').textContent='Wrong PIN. Only the site owner can upload.'};
-function openUp(){$('upKind').value=target;kindUI();$('upModal').classList.add('open')}
-function kindUI(){const k=$('upKind').value;$('upGroup').parentElement.style.display=k==='project'?'':'none';$('upTagL').textContent=k==='cert'?'Issuer':'Category / tools'}
-$('upKind').onchange=kindUI;
-let db=null,assets=null;
-$('upForm').onsubmit=async e=>{
-  e.preventDefault();$('upErr').textContent='';$('upBtn').disabled=true;
-  const k=$('upKind').value,file=$('upFile').files[0];
-  const doc={kind:k,c:['amber','mint','sky','coral'][Math.floor(Math.random()*4)],title:$('upTitle').value.trim(),tag:$('upTag').value.trim(),g:$('upGroup').value,
-    desc:$('upDesc').value.trim(),m:[$('upM1').value.trim(),$('upM2').value.trim()],url:$('upUrl').value.trim(),at:Date.now()};
-  try{
-    if(file){
-      if(assets){const r=await assets.upload(file);if(file.type.startsWith('image/'))doc.img=r.url;else doc.url=doc.url||r.url}
-      else if(file.type.startsWith('image/')&&file.size<1.5e6)doc.img=URL.createObjectURL(file);
-    }
-    if(db){await db.collection('items').add(doc)}else{doc.id='l'+doc.at;live.unshift(doc);render()}
-    toast(db?'Saved. Visitors can see it now.':'Added for this session only.');
-    $('upForm').reset();$('upModal').classList.remove('open');
-    document.getElementById(k==='cert'?'certs':k==='dashboard'?'dashboards':'projects').scrollIntoView();
-  }catch(err){$('upErr').textContent='Could not save: '+(err.message||err.code||'try again')}
-  $('upBtn').disabled=false;
-};
-(async()=>{
-  try{assets=await claude.use('assets')}catch(e){}
-  try{db=await claude.use('db');if(db)db.collection('items').orderBy('at','desc').onSnapshot(s=>{live=s.docs.map(d=>({...d.data(),id:d.id}));render()})}catch(e){db=null}
-})();
-
-/* ---------- skills ---------- */
-const SK=[['Querying','amber',[['Python (ETL, scripting)',95],['SQL (CTEs, windows)',95]]],['Analysis','mint',[['pandas & NumPy',96],['scikit-learn & SciPy',90]]],['BI & storytelling','sky',[['Power BI (DAX, modelling)',94],['Plotly, Seaborn, Matplotlib',94]]],['NLP & ML','coral',[['Sentence-BERT & TF-IDF',95],['Cosine similarity & ranking',94]]]];
-$('skillGrid').innerHTML=SK.map(([n,c,r])=>`<div class="card" style="--c:var(--${c})"><h3>${n}</h3>${r.map(([l,v])=>`<div class="sk"><div class="l"><span>${l}</span><span style="color:var(--${c})">${v}%</span></div><div class="t"><i data-w="${v}" style="--c:var(--${c})"></i></div></div>`).join('')}</div>`).join('');
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.querySelectorAll('[data-w]').forEach(i=>i.style.width=i.dataset.w+'%');io.unobserve(x.target)}}),{threshold:.3});
-document.querySelectorAll('#skillGrid .card').forEach(c=>io.observe(c));
-
-/* ---------- hero chart + counters ---------- */
-const cv=$('heroCanvas'),cx=cv.getContext('2d');let W,H,t0=performance.now(),mx=-1;
-const N=14,vals=Array.from({length:N},(_,i)=>.35+.4*Math.abs(Math.sin(i*.7+1))+i*.02);
-const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-function size(){const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}
-size();addEventListener('resize',size);
-cv.addEventListener('pointermove',e=>{mx=e.clientX-cv.getBoundingClientRect().left});cv.addEventListener('pointerleave',()=>mx=-1);
-const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
-function frame(now){
-  const p=still?1:Math.min((now-t0)/1600,1),e=1-Math.pow(1-p,3),tt=(now-t0)/1000;
-  cx.clearRect(0,0,W,H);const bw=W/N,base=H-6,line=[];
-  cx.strokeStyle=css('--line');cx.lineWidth=1;for(let i=1;i<4;i++){cx.beginPath();cx.moveTo(0,H*i/4);cx.lineTo(W,H*i/4);cx.stroke()}
-  for(let i=0;i<N;i++){
-    const v=(vals[i]+(still?0:.04*Math.sin(tt*1.6+i)))*e,h=v*(H-30),x=i*bw+bw*.18,hot=mx>=i*bw&&mx<(i+1)*bw;
-    cx.fillStyle=hot?css('--amber'):css('--sky');cx.globalAlpha=hot?1:.55;cx.fillRect(x,base-h,bw*.64,h);cx.globalAlpha=1;
-    line.push([x+bw*.32,base-h-14-8*Math.sin(i*.9)*e]);
-  }
-  cx.beginPath();line.forEach(([x,y],i)=>i?cx.lineTo(x,y):cx.moveTo(x,y));cx.strokeStyle=css('--mint');cx.lineWidth=2.5;cx.stroke();
-  line.forEach(([x,y])=>{cx.beginPath();cx.arc(x,y,3.5,0,7);cx.fillStyle=css('--mint');cx.fill()});
-  if(mx>=0){cx.strokeStyle=css('--amber');cx.setLineDash([4,4]);cx.beginPath();cx.moveTo(mx,0);cx.lineTo(mx,H);cx.stroke();cx.setLineDash([])}
-  if(!still)requestAnimationFrame(frame)
-}
-requestAnimationFrame(frame);
-document.querySelectorAll('.kpi b').forEach(b=>{
-  const n=+b.dataset.n,d=+(b.dataset.d||0),s=b.dataset.s||'',st=performance.now()+500;
-  const step=now=>{const p=Math.min(Math.max((now-st)/1500,0),1);b.textContent=(n*(1-Math.pow(1-p,3))).toFixed(d)+s;if(p<1&&!still)requestAnimationFrame(step)};
-  still?b.textContent=n.toFixed(d)+s:requestAnimationFrame(step);
-});
-document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);toast('Email copied')}catch(e){location.href='mailto:'+b.dataset.copy}});
-if(0)$('copyMail').onclick=async()=>{try{await navigator.clipboard.writeText('umairasifofficalll@gmail.com');toast('Email copied')}catch(e){location.href='mailto:umairasifofficalll@gmail.com'}};
-
-/* ---------- live lab ---------- */
-const DS={
- unicorn:{t:'bar',n:'Unicorn valuations',l:['Germany','Sweden','Brazil','France','Israel','Canada','Singapore','South Korea'],d:[27.8,19.5,17.2,16.8,15.9,14.7,13.5,12.8],u:'$ billions, excluding US, China, India, UK'},
- retail:{t:'doughnut',n:'Decathlon categories',l:['Cycling','Camping','Running','Gym','Trekking','Others'],d:[80.59,41.46,35.13,33.48,33.05,143.29],u:'Revenue, ₹ millions'},
- nlp:{t:'bar',n:'Movie similarity',l:['Vivid Reckoning','Burning Labyrinth','Solemn Empire II','Dark Warrior','Forgotten Storm','Eternal Signal'],d:[67.5,66.91,66.82,66.62,66.37,65.77],u:'Cosine match, %'}};
-let ch;
-function lab(k){
-  const s=DS[k],cols=['#ffb547','#3ee6b0','#5ac8fa','#ff6b6b','#b18cff','#7c7aa8'];
-  document.querySelectorAll('#labTabs button').forEach(b=>b.classList.toggle('on',b.dataset.k===k));
-  if(ch)ch.destroy();
-  const tick=css('--mut'),grid=css('--line');
-  ch=new Chart($('labChart'),{type:s.t,data:{labels:s.l,datasets:[{label:s.u,data:s.d,backgroundColor:s.t==='bar'?cols[k==='nlp'?1:0]:cols,borderColor:css('--panel'),borderWidth:s.t==='bar'?0:3,borderRadius:6}]},
-   options:{responsive:true,maintainAspectRatio:false,animation:{duration:900,easing:'easeOutQuart'},plugins:{legend:{labels:{color:tick}}},scales:s.t==='bar'?{x:{ticks:{color:tick},grid:{color:grid}},y:{ticks:{color:tick},grid:{color:grid}}}:{}}});
-}
-$('labTabs').innerHTML=Object.entries(DS).map(([k,v])=>`<button data-k="${k}">${v.n}</button>`).join('');
-$('labTabs').onclick=e=>{const b=e.target.closest('[data-k]');if(b)lab(b.dataset.k)};
-render();
-const startLab=()=>{if(window.Chart)lab('unicorn')};document.readyState==='complete'?startLab():addEventListener('load',startLab);
-window.UA={items,openDetail};window.dispatchEvent(new Event('ua-ready'));
-
-const navs=[...document.querySelectorAll('header nav a[href^="#"]:not(.btn)')];
-const sio=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)navs.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
-document.querySelectorAll('main section[id]').forEach(x=>sio.observe(x));
-reveal();
-</script>
-<script type="module">
-const wrap=document.getElementById('globe'),pop=document.getElementById('gpop'),placesEl=document.getElementById('places');
-const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
-const small=matchMedia('(max-width:700px)').matches;
-const waitUA=()=>window.UA?Promise.resolve():new Promise(r=>addEventListener('ua-ready',r,{once:true}));
-try{
-  const [THREE,topo,geo]=await Promise.all([
-    import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js'),
-    import('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/+esm'),
-    import('https://cdn.jsdelivr.net/npm/d3-geo@3.1.0/+esm')]);
-  const landTopo=await (await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json')).json();
-  await waitUA();
-  const land=topo.feature(landTopo,landTopo.objects.land);
-  const R=1,D2R=Math.PI/180;
-  const v3=(lat,lon,r=R)=>new THREE.Vector3(r*Math.cos(lat*D2R)*Math.sin(lon*D2R),r*Math.sin(lat*D2R),r*Math.cos(lat*D2R)*Math.cos(lon*D2R));
-
-  // group projects by place
-  const P=new Map();
-  window.UA.items().filter(i=>i.loc).forEach(i=>{const k=i.loc[2];if(!P.has(k))P.set(k,{lat:i.loc[0],lon:i.loc[1],name:k,list:[]});P.get(k).list.push(i)});
-  const home=P.get('Lahore');
-
-  const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
-  renderer.setPixelRatio(Math.min(devicePixelRatio||1,small?1.5:2));
-  wrap.prepend(renderer.domElement);
-  const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(36,1,.1,50);cam.position.set(0,0,3.6);
-  const world=new THREE.Group();scene.add(world);
-
-  const col=n=>new THREE.Color(css(n)||'#888');
-  // base sphere
-  world.add(new THREE.Mesh(new THREE.SphereGeometry(R*.985,64,64),new THREE.MeshBasicMaterial({color:col('--line'),transparent:true,opacity:.28})));
-  // atmosphere ring
-  const halo=new THREE.Mesh(new THREE.RingGeometry(R*1.0,R*1.06,96),new THREE.MeshBasicMaterial({color:col('--sky'),transparent:true,opacity:.12,side:THREE.DoubleSide}));
-  scene.add(halo);
-  // land dots (fibonacci sphere sampled against the land polygons)
-  const N=small?6000:11000,pts=[],gold=Math.PI*(3-Math.sqrt(5));
-  for(let i=0;i<N;i++){const y=1-2*(i+.5)/N,lat=Math.asin(y)/D2R,lon=((i*gold/D2R)%360+540)%360-180;if(geo.geoContains(land,[lon,lat]))pts.push(v3(lat,lon,R))}
-  const dg=new THREE.BufferGeometry().setFromPoints(pts);
-  world.add(new THREE.Points(dg,new THREE.PointsMaterial({color:col('--mut'),size:small?.024:.019,sizeAttenuation:true,transparent:true,opacity:.95})));
-
-  // pins, pulses, arcs
-  const hits=[],pulses=[],arcs=[];
-  const pinCol=['--amber','--mint','--sky','--coral'];
-  [...P.values()].forEach((p,i)=>{
-    const c=col(p===home?'--amber':pinCol[(i%3)+1]),base=v3(p.lat,p.lon,R),n=base.clone().normalize();
-    const h=.08+.035*Math.min(p.list.length,4);
-    const stem=new THREE.Mesh(new THREE.CylinderGeometry(.006,.006,h,8),new THREE.MeshBasicMaterial({color:c}));
-    stem.position.copy(n.clone().multiplyScalar(R+h/2));stem.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),n);world.add(stem);
-    const head=new THREE.Mesh(new THREE.SphereGeometry(.028,16,16),new THREE.MeshBasicMaterial({color:c}));head.position.copy(n.clone().multiplyScalar(R+h));world.add(head);
-    const hit=new THREE.Mesh(new THREE.SphereGeometry(.09,8,8),new THREE.MeshBasicMaterial({visible:false}));hit.position.copy(head.position);hit.userData=p;world.add(hit);hits.push(hit);
-    const ring=new THREE.Mesh(new THREE.RingGeometry(.03,.042,32),new THREE.MeshBasicMaterial({color:c,transparent:true,opacity:.8,side:THREE.DoubleSide}));
-    ring.position.copy(n.clone().multiplyScalar(R+.003));ring.lookAt(n.clone().multiplyScalar(2));ring.userData.t=i*.7;world.add(ring);pulses.push(ring);
-    p.head=head;p.color=c;
-    if(home&&p!==home){
-      const a=v3(home.lat,home.lon,R),b=base,mid=a.clone().add(b).multiplyScalar(.5),dist=a.distanceTo(b);
-      mid.normalize().multiplyScalar(R+.15+dist*.35);
-      const curve=new THREE.QuadraticBezierCurve3(a,mid,b),g=new THREE.BufferGeometry().setFromPoints(curve.getPoints(80));
-      const line=new THREE.Line(g,new THREE.LineBasicMaterial({color:c,transparent:true,opacity:.55}));
-      g.setDrawRange(0,still?81:0);line.userData={t:-i*.25};world.add(line);arcs.push(line);
-    }
-  });
-
-  // place chips (keyboard + mobile friendly)
-  const order=[...P.values()].sort((a,b)=>(b===home)-(a===home)||b.list.length-a.list.length);
-  placesEl.innerHTML=order.map(p=>`<button data-place="${p.name}">${p.name.split(' (')[0]}<i>${p.list.length}</i></button>`).join('');
-
-  // sizing
-  function size(){const w=wrap.clientWidth,h=wrap.clientHeight;renderer.setSize(w,h,false);cam.aspect=w/h;cam.position.z=w<420?4.1:3.6;cam.updateProjectionMatrix()}
-  size();new ResizeObserver(size).observe(wrap);
-
-  // rotation state: start facing Lahore
-  let rx=(home?home.lat:25)*D2R*.6,ry=-(small?63:(home?home.lon:60))*D2R,tx=rx,ty=ry,auto=!still,drag=null,active=null,lastMove=0;
-  const face=p=>{tx=p.lat*D2R*.8;ty=-p.lon*D2R;let d=ty-ry;d=((d+Math.PI)%(2*Math.PI)+2*Math.PI)%(2*Math.PI)-Math.PI;ty=ry+d};
-
-  const ray=new THREE.Raycaster(),m=new THREE.Vector2();
-  const pick=e=>{const r=wrap.getBoundingClientRect();m.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);ray.setFromCamera(m,cam);
-    const h=ray.intersectObjects(hits)[0];if(!h)return null;
-    // ignore pins on the far side
-    const wp=h.object.getWorldPosition(new THREE.Vector3());return wp.z>0?h.object.userData:null};
-  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  function show(p){active=p;pop.innerHTML=`<b>${esc(p.name)}</b>`+p.list.map(it=>`<button data-pid="${it.id}">${esc(it.title)}<small>${esc((it.m||[])[0]||it.tag||'')}</small></button>`).join('');pop.classList.add('on');
-    placesEl.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.place===p.name))}
-  function hide(){active=null;pop.classList.remove('on');placesEl.querySelectorAll('button').forEach(b=>b.classList.remove('on'))}
-
-  wrap.addEventListener('pointerdown',e=>{if(e.target.closest('.gpop'))return;drag={x:e.clientX,y:e.clientY,rx:tx,ry:ty,moved:false};auto=false;wrap.setPointerCapture(e.pointerId)});
-  wrap.addEventListener('pointermove',e=>{
-    if(drag){const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4)drag.moved=true;ty=drag.ry+dx*.006;tx=Math.max(-1.2,Math.min(1.2,drag.rx+dy*.006));lastMove=performance.now();return}
-    if(e.pointerType==='mouse'){const p=pick(e);wrap.style.cursor=p?'pointer':'grab';if(p&&p!==active)show(p)}});
-  wrap.addEventListener('pointerup',e=>{const d=drag;drag=null;if(d&&!d.moved){const p=pick(e);if(p){face(p);show(p)}else if(!e.target.closest('.gpop'))hide()}setTimeout(()=>{if(!active&&!still)auto=true},2500)});
-  pop.addEventListener('click',e=>{const b=e.target.closest('[data-pid]');if(b)window.UA.openDetail(b.dataset.pid)});
-  placesEl.addEventListener('click',e=>{const b=e.target.closest('[data-place]');if(!b)return;const p=P.get(b.dataset.place);auto=false;face(p);show(p)});
-  wrap.addEventListener('pointerleave',()=>{if(!drag&&active&&matchMedia('(hover:hover)').matches){}});
-
-  // render loop, paused when off-screen
-  let vis=true;new IntersectionObserver(([en])=>{vis=en.isIntersecting;if(vis)requestAnimationFrame(loop)}).observe(wrap);
-  const tmp=new THREE.Vector3();let t0=performance.now();
-  function loop(now){
-    if(!vis)return;const t=(now-t0)/1000;
-    if(auto&&!drag)ty+=.0018;
-    rx+=(tx-rx)*.08;ry+=(ty-ry)*.08;world.rotation.set(rx,ry,0);
-    if(!still){pulses.forEach(r=>{const k=((t*.8+r.userData.t)%1.6)/1.6;r.scale.setScalar(1+k*2.2);r.material.opacity=.8*(1-k)});
-      arcs.forEach(l=>{const k=Math.max(0,Math.min(1,(t*.35+l.userData.t)%2.2));l.geometry.setDrawRange(0,Math.floor(Math.min(k,1)*81))})}
-    if(active&&active.head){active.head.getWorldPosition(tmp);const back=tmp.z<0;tmp.project(cam);
-      pop.style.left=((tmp.x+1)/2*wrap.clientWidth)+'px';pop.style.top=((1-tmp.y)/2*wrap.clientHeight)+'px';pop.style.visibility=back?'hidden':'visible'}
-    renderer.render(scene,cam);requestAnimationFrame(loop)}
-  requestAnimationFrame(loop);
-  requestAnimationFrame(()=>requestAnimationFrame(()=>wrap.classList.add('ready')));
-  // first-time hint: open Lahore after the intro
-  if(home&&!small)setTimeout(()=>{if(!active&&!drag)show(home)},2600);
-}catch(err){console.warn('globe fallback',err);wrap.classList.add('fail');placesEl.style.display='none'}
-</script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script type="module" src="globe.js"></script>
 </body>
 </html>
