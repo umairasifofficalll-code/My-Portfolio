@@ -25,13 +25,13 @@ function renderBento() {
   $('bento').innerHTML = FEATURED.map(([t, cls, kind], n) => {
     const it = byTitle(t); if (!it) return '';
     const media = kind === 'video'
-      ? `<video muted loop playsinline preload="metadata" poster="img/dubai-dashboard-poster.jpg" width="960" height="600" aria-label="The Dubai dashboard being clicked through its four pages"><source src="img/dubai-dashboard.mp4" type="video/mp4"><source src="img/dubai-dashboard.webm" type="video/webm"></video>`
+      ? `<video muted loop playsinline preload="none" poster="img/dubai-dashboard-poster.webp" width="960" height="600" aria-label="The Dubai dashboard being clicked through its four pages"><source src="img/dubai-dashboard.mp4" type="video/mp4"><source src="img/dubai-dashboard.webm" type="video/webm"></video>`
       : `<img src="${esc(cls === 'c1' || cls === 'c2' ? it.img : thumb(it.img))}" alt="${esc(it.title)}" loading="lazy" decoding="async">`;
     return `<button class="cell ${cls}" data-open="${it.id}" data-rv style="--i:${n}"><div class="media">${media}</div><div class="meta"><h3>${esc(it.title.split(':')[0])}</h3><span>${esc((it.m || [])[0] || '')}</span></div><p>${esc(it.tag || '')}</p></button>`;
   }).join('');
   const v = $('bento').querySelector('video');
   if (v && !matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-    new IntersectionObserver(([e]) => { if (e.isIntersecting) v.play().catch(() => {}); else v.pause(); }, { threshold: .35 }).observe(v);
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) v.play().catch(() => {}); else v.pause(); }, { threshold: .25 }).observe(v);
   }
 }
 
